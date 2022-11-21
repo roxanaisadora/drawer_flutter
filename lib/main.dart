@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sesion_09/preferences/preference.dart';
-import 'package:sesion_09/screens/index.dart';
+import 'package:sesion_09/route/route.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const Homescreen()
+      onGenerateRoute: MyRoutes.generateRoute,
+      initialRoute: MyRoutes.rHome,
     );
   }
 }

@@ -13,6 +13,23 @@ class SettingWidget extends StatefulWidget {
 }
 
 class _SettingWidgetState extends State<SettingWidget> {
+  final imgController = TextEditingController(text:Preferences.img);
+  final nombreController = TextEditingController(text:Preferences.nombre);
+  final profesionController = TextEditingController(text:Preferences.profesion);
+  final emailController = TextEditingController(text:Preferences.email);
+  final mobileController = TextEditingController(text:Preferences.mobile);
+
+  
+
+  guardar(){
+    Preferences.img = imgController.text;
+    Preferences.nombre = nombreController.text;
+    Preferences.profesion = profesionController.text;
+    Preferences.email = emailController.text;
+    Preferences.mobile = mobileController.text;
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,58 +48,43 @@ class _SettingWidgetState extends State<SettingWidget> {
           child: Column(
             children: [
               CustomTextField(
-                initialvalue: Preferences.img,
+                //initialvalue: Preferences.img,
+                controller:imgController,
                 keyboardType: TextInputType.text,
                 hintText: 'Imagen',
                 prefixIcon: const Icon(Icons.photo),
-                onChange: (value) {
-                  Preferences.img = value;
-                  setState(() {});
-                },
               ),
               const SizedBox(height: 10,),
               CustomTextField(
-                initialvalue: Preferences.nombre,
+                //initialvalue: Preferences.nombre,
+                controller:nombreController,
                 keyboardType: TextInputType.name,
                 hintText: 'Nombre Completo',
                 prefixIcon: const Icon(Icons.person),
-                onChange: (value) {
-                  Preferences.nombre = value;
-                  setState(() {});
-                },
+                
               ),
               const SizedBox(height: 10,),
               CustomTextField(
-                initialvalue: Preferences.profesion,
+                controller:profesionController,
                 keyboardType: TextInputType.name,
                 hintText: 'Profesion',
                 prefixIcon: const Icon(Icons.work),
-                onChange: (value) {
-                  Preferences.profesion = value;
-                  setState(() {});
-                },
               ),
               const SizedBox(height: 10,),
               CustomTextField(
-                initialvalue: Preferences.email,
+                controller:emailController,
                 keyboardType: TextInputType.emailAddress,
                 hintText: 'Email',
                 prefixIcon: const Icon(Icons.mail),
-                onChange: (value) {
-                  Preferences.email = value;
-                  setState(() {});
-                },
+                
               ),
               const SizedBox(height: 10,),
               CustomTextField(
-                initialvalue: Preferences.mobile,
+                controller:mobileController,
                 keyboardType: TextInputType.number,
                 hintText: 'Telefono',
                 prefixIcon: const Icon(Icons.phone_android),
-                onChange: (value) {
-                  Preferences.mobile = value;
-                  setState(() {});
-                },
+                
               ),
               const SizedBox(height: 10,),
               CustomTextField2(
@@ -157,7 +159,16 @@ class _SettingWidgetState extends State<SettingWidget> {
               ),
               )
                 ],
-              )
+              ),
+              MaterialButton(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)
+                ),
+                color: Colors.amber,
+                child: const Text('Guardar', style: TextStyle(color: Colors.white, fontSize: 25),),
+                onPressed: (){
+                  guardar();
+                })
             ],
           ),
         ),

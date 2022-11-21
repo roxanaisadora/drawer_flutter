@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:sesion_09/screens/index.dart';
+import 'package:sesion_09/route/route.dart';
 import 'package:sesion_09/preferences/preference.dart';
 
 class CustomWidgetHome extends StatelessWidget {
@@ -65,10 +65,7 @@ class CustomWidgetHome extends StatelessWidget {
             title:const Text('home'),
             minLeadingWidth : 10,
             onTap: (){
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context)=> const Homescreen())
-              );
+              Navigator.pushReplacementNamed(context, MyRoutes.rHome);
             },
             ),
             ListTile(
@@ -76,10 +73,7 @@ class CustomWidgetHome extends StatelessWidget {
             minLeadingWidth : 10,
             title:const Text('Configuracion'),
             onTap: (){
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context)=> const SettingWidget())
-              );
+              Navigator.pushReplacementNamed(context, MyRoutes.rAjuste);
             },
           ),
           ListTile(
@@ -87,10 +81,7 @@ class CustomWidgetHome extends StatelessWidget {
             minLeadingWidth : 10,
             title:const Text('Mi perfil'),
             onTap: (){
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context)=> const MyPerfilScreen())
-              );
+              Navigator.pushReplacementNamed(context, MyRoutes.rPerfil);
             },
           ),
           const Divider(

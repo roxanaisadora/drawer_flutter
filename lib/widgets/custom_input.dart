@@ -6,16 +6,18 @@ class CustomTextField extends StatelessWidget {
   final TextInputType? keyboardType;
   final String? hintText;
   final Widget? prefixIcon;
-  final String? initialvalue;
-  final Function(String)? onChange;
+  final TextEditingController? controller;
+  //final String? initialvalue;
+  //final Function(String)? onChange;
 
-  const CustomTextField({super.key, this.keyboardType, this.hintText, this.prefixIcon, this.initialvalue, this.onChange});
+  const CustomTextField({super.key, this.keyboardType, this.hintText, this.prefixIcon, this.controller,});
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      initialValue: initialvalue,
-      onChanged: onChange,
+      //initialValue: initialvalue,
+      //onChanged: onChange,
+      controller:controller,
       keyboardType: keyboardType,
       decoration: InputDecoration(
         enabledBorder: OutlineInputBorder(
