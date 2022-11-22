@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:sesion_09/preferences/preference.dart';
+import 'package:sesion_09/providers/theme_provider.dart';
 import 'package:sesion_09/route/route.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Preferences.init();
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(providers: [
+      ChangeNotifierProvider(
+        create: (_) => ProviderTheme(isDarkMode: Preferences.theme),
+      ),
+    ], child: const MyApp()),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -17,9 +25,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Drawer',
-      theme: ThemeData(
-        useMaterial3: true,
-      ),
+      theme: Provider.of<ProviderTheme>(context).currentTheme,
       onGenerateRoute: MyRoutes.generateRoute,
       initialRoute: MyRoutes.rHome,
     );

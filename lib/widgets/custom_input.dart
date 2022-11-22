@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:sesion_09/preferences/preference.dart';
 
 class CustomTextField extends StatelessWidget {
   final TextInputType? keyboardType;
@@ -29,10 +30,14 @@ class CustomTextField extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         filled: true,
-        fillColor: Colors.white,
+        // ignore: unrelated_type_equality_checks
+        fillColor: (Preferences.theme == true)
+                        ? Colors.grey
+                        : Colors.white,
         hintText: hintText,
         prefixIcon: prefixIcon,
         contentPadding: const EdgeInsets.all(18),
+        
       ),
     );
   }

@@ -13,6 +13,7 @@ class Preferences {
   static String _facebook = '';
   static String _linkedin = '';
   static int _genero = 1;
+  static bool _theme = false;
 
   static Future init() async {
     _prefs = await SharedPreferences.getInstance();
@@ -116,5 +117,15 @@ class Preferences {
   static set genero(int genero) {
     _genero = genero;
     _prefs.setInt('genero', genero);
+  }
+
+  //Theme
+  static bool get theme {
+    return _prefs.getBool('theme') ?? _theme;
+  }
+
+  static set theme(bool value) {
+    _theme = value;
+    _prefs.setBool('theme', value);
   }
 }

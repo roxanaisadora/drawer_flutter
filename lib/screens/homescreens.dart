@@ -9,7 +9,6 @@ class Homescreen extends StatelessWidget {
   Widget build(BuildContext context) {
     
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: (Preferences.genero != 1)
                         ? Colors.redAccent

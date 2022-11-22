@@ -1,7 +1,9 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:sesion_09/preferences/preference.dart';
+import 'package:sesion_09/providers/theme_provider.dart';
 import 'package:sesion_09/widgets/index.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -18,6 +20,9 @@ class _SettingWidgetState extends State<SettingWidget> {
   final profesionController = TextEditingController(text:Preferences.profesion);
   final emailController = TextEditingController(text:Preferences.email);
   final mobileController = TextEditingController(text:Preferences.mobile);
+  final twitterController = TextEditingController(text:Preferences.twitter);
+  final facebookController = TextEditingController(text:Preferences.facebook);
+  final linkedinController = TextEditingController(text:Preferences.linkedin);
 
   
 
@@ -27,19 +32,33 @@ class _SettingWidgetState extends State<SettingWidget> {
     Preferences.profesion = profesionController.text;
     Preferences.email = emailController.text;
     Preferences.mobile = mobileController.text;
+    Preferences.twitter = twitterController.text;
+    Preferences.facebook = facebookController.text;
+    Preferences.linkedin = linkedinController.text;
+
     setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: (Preferences.genero != 1)
                         ? Colors.redAccent
                         : Colors.blue,
         title: const Text('Configuracion'),
         centerTitle: true,
+        actions: [
+          Switch.adaptive(
+            value: Preferences.theme,
+            onChanged: (value) {
+              Preferences.theme = value;
+              final themeP = Provider.of<ProviderTheme>(context, listen: false);
+              value ? themeP.setOscuro() : themeP.setClaro();
+              setState(() {});
+            },
+          )
+        ],
       ),
       drawer: const CustomWidgetHome(),
       body:SingleChildScrollView(
@@ -47,77 +66,67 @@ class _SettingWidgetState extends State<SettingWidget> {
           padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
           child: Column(
             children: [
-              CustomTextField(
+              CustomTextField2(
                 //initialvalue: Preferences.img,
                 controller:imgController,
                 keyboardType: TextInputType.text,
                 hintText: 'Imagen',
-                prefixIcon: const Icon(Icons.photo),
+                prefixIcon: const FaIcon(FontAwesomeIcons.image)
               ),
               const SizedBox(height: 10,),
-              CustomTextField(
+              CustomTextField2(
                 //initialvalue: Preferences.nombre,
                 controller:nombreController,
                 keyboardType: TextInputType.name,
                 hintText: 'Nombre Completo',
-                prefixIcon: const Icon(Icons.person),
+                prefixIcon: const FaIcon(FontAwesomeIcons.user)
                 
               ),
               const SizedBox(height: 10,),
-              CustomTextField(
+              CustomTextField2(
                 controller:profesionController,
                 keyboardType: TextInputType.name,
                 hintText: 'Profesion',
                 prefixIcon: const Icon(Icons.work),
               ),
               const SizedBox(height: 10,),
-              CustomTextField(
+              CustomTextField2(
                 controller:emailController,
                 keyboardType: TextInputType.emailAddress,
                 hintText: 'Email',
-                prefixIcon: const Icon(Icons.mail),
+                prefixIcon: const FaIcon(FontAwesomeIcons.envelope)
                 
               ),
               const SizedBox(height: 10,),
-              CustomTextField(
+              CustomTextField2(
                 controller:mobileController,
                 keyboardType: TextInputType.number,
                 hintText: 'Telefono',
-                prefixIcon: const Icon(Icons.phone_android),
+                prefixIcon: const FaIcon(FontAwesomeIcons.mobileScreen)
                 
               ),
               const SizedBox(height: 10,),
               CustomTextField2(
-                initialvalue: Preferences.twitter,
+                controller:twitterController,
                 keyboardType: TextInputType.name,
                 hintText: 'twitter',
                 prefixIcon: const FaIcon(FontAwesomeIcons.twitter),
-                onChange: (value) {
-                  Preferences.twitter = value;
-                  setState(() {});
-                },
               ),
               const SizedBox(height: 10,),
               CustomTextField2(
-                initialvalue: Preferences.facebook,
+                controller:facebookController,
+                //initialvalue: Preferences.facebook,
                 keyboardType: TextInputType.name,
                 hintText: 'facebook',
                 prefixIcon: const FaIcon(FontAwesomeIcons.facebook),
-                onChange: (value) {
-                  Preferences.facebook = value;
-                  setState(() {});
-                },
+                
               ),
               const SizedBox(height: 10,),
               CustomTextField2(
-                initialvalue: Preferences.linkedin,
+                controller:linkedinController,
                 keyboardType: TextInputType.name,
                 hintText: 'linkedin',
                 prefixIcon: const Icon(Icons.link),
-                onChange: (value) {
-                  Preferences.linkedin = value;
-                  setState(() {});
-                },
               ),
               const SizedBox(height: 15,),
               Row(
@@ -160,6 +169,7 @@ class _SettingWidgetState extends State<SettingWidget> {
               )
                 ],
               ),
+              const SizedBox(height: 10),
               MaterialButton(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10)

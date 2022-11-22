@@ -10,7 +10,6 @@ class MyPerfilScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: (Preferences.genero != 1)
                         ? Colors.redAccent
@@ -25,7 +24,6 @@ class MyPerfilScreen extends StatelessWidget {
             children: [
               Container(
                 width: double.infinity,
-                
                  decoration: BoxDecoration(
                   color: (Preferences.genero != 1)
                         ? Colors.redAccent
@@ -93,6 +91,7 @@ class MyPerfilScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    const SizedBox(height: 15,),
                     SizedBox(
                       height: 80,
                       width: double.infinity,
