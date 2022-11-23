@@ -12,6 +12,14 @@ class Homescreen extends StatelessWidget {
               padding: const EdgeInsets.only(left: 15, bottom: 10),
               child: ElevatedButton(
                 onPressed: () {},
+                style: ButtonStyle(
+                    foregroundColor: MaterialStateProperty.all<Color>(
+                        e.id == 1 ? Colors.black : Colors.black),
+                    backgroundColor: MaterialStateProperty.all<Color>(
+                        e.id == 1 ? Colors.pink : Colors.white),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30)))),
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
@@ -26,19 +34,11 @@ class Homescreen extends StatelessWidget {
                       const SizedBox(width: 10),
                       Text(
                         e.title,
-                        style: TextStyle(fontSize: 14),
+                        style: const TextStyle(fontSize: 14),
                       )
                     ],
                   ),
                 ),
-                style: ButtonStyle(
-                    foregroundColor: MaterialStateProperty.all<Color>(
-                        e.id == 1 ? Colors.black : Colors.black),
-                    backgroundColor: MaterialStateProperty.all<Color>(
-                        e.id == 1 ? Colors.pink : Colors.white),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30)))),
               ),
             ))
         .toList();
@@ -50,8 +50,8 @@ class Homescreen extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: (Preferences.genero != 1)
-            ? Color.fromARGB(255, 252, 248, 249)
-            : Color.fromARGB(255, 133, 81, 116),
+            ? const  Color.fromARGB(255, 252, 248, 249)
+            : const Color.fromARGB(255, 133, 81, 116),
         title: const Text('Shine Clothes'),
         centerTitle: true,
 actions: const [Icon(Icons.shopping_cart_outlined)],
@@ -158,13 +158,13 @@ actions: const [Icon(Icons.shopping_cart_outlined)],
                                 ),
                                 
                                 ),
-                                Spacer(),
+                                const Spacer(),
                                 ElevatedButton(onPressed: (){},
-                                 child: const Icon(Icons.add,color:Colors.white),
                                  style: ButtonStyle(
                                   backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
                                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)))
                                  ),
+                                 child: const Icon(Icons.add,color:Colors.white),
                                  
                                  )
                               ],
