@@ -4,16 +4,17 @@ class Data {
    static List<ProductModel> generateProducts(){
     return [
       ProductModel(
+
         1,
         "assets/bolso.jpg",
-        "Creter Impact",
+         "Creter Impact",
         "Men's Shoes",
         "men shoes",
-        99.56
+       99.56
       ),
       ProductModel(
           2,
-          "assets/ropa1.jpg",
+          "assets/ropa3.png",
           "Air - Max Pre Day",
           "Men's Shoes",
           "men shoes",

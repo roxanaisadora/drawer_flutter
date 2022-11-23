@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:sesion_09/widgets/index.dart';
 import 'package:sesion_09/preferences/preference.dart';
@@ -51,23 +53,33 @@ class Homescreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: (Preferences.genero != 1)
             ? const  Color.fromARGB(255, 252, 248, 249)
-            : const Color.fromARGB(255, 133, 81, 116),
-        title: const Text('Shine Clothes'),
+            : Color.fromARGB(255, 247, 246, 244),
+        title: const Text('Shine Clothes',style: TextStyle(color: Color.fromARGB(255, 12, 12, 12),fontSize: 30,fontWeight: FontWeight.bold),),
         centerTitle: true,
-        actions: const [Icon(Icons.shopping_cart_outlined)],
+        actions: <Widget>[
+          IconButton( icon:const Icon(Icons.notifications_none),
+          onPressed: (){},),
+       
+          IconButton( icon:const Icon(Icons.shopping_cart_outlined),
+          onPressed: (){},)
+        ],
+        elevation: 0,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+        
+      
       ),
       
       drawer: const CustomWidgetHome(),
       body: ListView(
         children: [
           Padding(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(8),
             child: Stack(
               children: [
                 ClipRRect(
                   // ignore: sort_child_properties_last
-                  child: Image.asset("assets/banner3.jpg"),
-                  borderRadius: BorderRadius.circular(14),
+                  child: Image.asset("assets/banner4.png"),
+                  // borderRadius: BorderRadius.circular(10),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(20),
@@ -93,7 +105,7 @@ class Homescreen extends StatelessWidget {
             child: RichText(
               textAlign: TextAlign.start,
               text: const TextSpan(
-                  text: "Moda 2022",
+                  text: "Galeria de modelos",
                   style: TextStyle(
                       color: Colors.black,
                       fontSize: 20,
