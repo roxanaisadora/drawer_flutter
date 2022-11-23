@@ -16,6 +16,6 @@ class MyRoutes {
       return MaterialPageRoute(builder: (_) => const SettingWidget());
       default:
       return MaterialPageRoute(builder: (_) => const NavigationScrean());
-    
+    }
   }
 }
