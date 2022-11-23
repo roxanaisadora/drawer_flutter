@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       title: 'Drawer',
       theme: Provider.of<ProviderTheme>(context).currentTheme,
       onGenerateRoute: MyRoutes.generateRoute,
-      initialRoute: MyRoutes.rHome,
+      initialRoute: MyRoutes.rLogin,
     );
   }
 }
