@@ -17,25 +17,23 @@ class SettingWidget extends StatefulWidget {
 class _SettingWidgetState extends State<SettingWidget> {
   final imgController = TextEditingController(text:Preferences.img);
   final nombreController = TextEditingController(text:Preferences.nombre);
-  final profesionController = TextEditingController(text:Preferences.profesion);
+  final apellidoController = TextEditingController(text:Preferences.apellido);
+  final birthdayController = TextEditingController(text:Preferences.birthday);
   final emailController = TextEditingController(text:Preferences.email);
   final mobileController = TextEditingController(text:Preferences.mobile);
-  final twitterController = TextEditingController(text:Preferences.twitter);
-  final facebookController = TextEditingController(text:Preferences.facebook);
-  final linkedinController = TextEditingController(text:Preferences.linkedin);
+  
 
   
 
   guardar(){
     Preferences.img = imgController.text;
     Preferences.nombre = nombreController.text;
-    Preferences.profesion = profesionController.text;
+    Preferences.apellido = apellidoController.text;
+    Preferences.birthday = birthdayController.text;
     Preferences.email = emailController.text;
     Preferences.mobile = mobileController.text;
-    Preferences.twitter = twitterController.text;
-    Preferences.facebook = facebookController.text;
-    Preferences.linkedin = linkedinController.text;
-
+   
+  
     setState(() {});
   }
 
@@ -78,16 +76,23 @@ class _SettingWidgetState extends State<SettingWidget> {
                 //initialvalue: Preferences.nombre,
                 controller:nombreController,
                 keyboardType: TextInputType.name,
-                hintText: 'Nombre Completo',
+                hintText: 'Nombres',
                 prefixIcon: const FaIcon(FontAwesomeIcons.user)
-                
               ),
               const SizedBox(height: 10,),
               CustomTextField2(
-                controller:profesionController,
+                //initialvalue: Preferences.nombre,
+                controller:apellidoController,
                 keyboardType: TextInputType.name,
-                hintText: 'Profesion',
-                prefixIcon: const Icon(Icons.work),
+                hintText: 'Apellidos',
+                prefixIcon: const FaIcon(FontAwesomeIcons.user)
+              ),
+              const SizedBox(height: 10,),
+              CustomTextField2(
+                controller:birthdayController,
+                keyboardType: TextInputType.datetime,
+                hintText: 'dd/mm/yyyy',
+                prefixIcon: const Icon(Icons.calendar_month),
               ),
               const SizedBox(height: 10,),
               CustomTextField2(
@@ -95,7 +100,6 @@ class _SettingWidgetState extends State<SettingWidget> {
                 keyboardType: TextInputType.emailAddress,
                 hintText: 'Email',
                 prefixIcon: const FaIcon(FontAwesomeIcons.envelope)
-                
               ),
               const SizedBox(height: 10,),
               CustomTextField2(
@@ -103,30 +107,6 @@ class _SettingWidgetState extends State<SettingWidget> {
                 keyboardType: TextInputType.number,
                 hintText: 'Telefono',
                 prefixIcon: const FaIcon(FontAwesomeIcons.mobileScreen)
-                
-              ),
-              const SizedBox(height: 10,),
-              CustomTextField2(
-                controller:twitterController,
-                keyboardType: TextInputType.name,
-                hintText: 'twitter',
-                prefixIcon: const FaIcon(FontAwesomeIcons.twitter),
-              ),
-              const SizedBox(height: 10,),
-              CustomTextField2(
-                controller:facebookController,
-                //initialvalue: Preferences.facebook,
-                keyboardType: TextInputType.name,
-                hintText: 'facebook',
-                prefixIcon: const FaIcon(FontAwesomeIcons.facebook),
-                
-              ),
-              const SizedBox(height: 10,),
-              CustomTextField2(
-                controller:linkedinController,
-                keyboardType: TextInputType.name,
-                hintText: 'linkedin',
-                prefixIcon: const Icon(Icons.link),
               ),
               const SizedBox(height: 15,),
               Row(

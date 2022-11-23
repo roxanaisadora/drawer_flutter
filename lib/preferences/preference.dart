@@ -6,6 +6,7 @@ class Preferences {
   static String _img = '';
   static String _nombre = '';
   static String _apellido = '';
+  static String _birthday = '';
   static String _profesion = '';
   static String _email = '';
   static String _mobile = '';
@@ -50,6 +51,16 @@ class Preferences {
     _apellido = apellido;
     _prefs.setString('apellido', apellido);
   }
+  //birthday
+  static String get birthday {
+    return _prefs.getString('birthday') ?? _birthday;
+  }
+
+  static set birthday(String birthday) {
+    _birthday = birthday;
+    _prefs.setString('birthday', birthday);
+  }
+
   //profesion
   static String get profesion {
     return _prefs.getString('profesion') ?? _profesion;
