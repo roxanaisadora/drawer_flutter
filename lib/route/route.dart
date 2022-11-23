@@ -14,6 +14,8 @@ class MyRoutes {
       return MaterialPageRoute(builder: (_) => const NavigationScrean());
       case('/ajuste'):
       return MaterialPageRoute(builder: (_) => const SettingWidget());
+      case ('/login'):
+        return MaterialPageRoute(builder: (_) => const LoginScreen());
       default:
       return MaterialPageRoute(builder: (_) => const NavigationScrean());
     }
