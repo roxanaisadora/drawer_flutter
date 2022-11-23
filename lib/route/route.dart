@@ -7,18 +7,15 @@ class MyRoutes {
   static const String rPerfil = '/perfil';
   static const String rLogin = '/login';
 
-  static Route<dynamic> generateRoute(RouteSettings settings) {
-    switch (settings.name) {
-      case ('/Home'):
-        return MaterialPageRoute(builder: (_) => const Homescreen());
-      case ('/ajuste'):
-        return MaterialPageRoute(builder: (_) => const SettingWidget());
-      case ('/perfil'):
-        return MaterialPageRoute(builder: (_) => const MyPerfilScreen());
-      case ('/login'):
-        return MaterialPageRoute(builder: (_) => const LoginScreen());
+
+  static Route<dynamic> generateRoute(RouteSettings settings){
+    switch(settings.name){
+      case('/Home'):
+      return MaterialPageRoute(builder: (_) => const NavigationScrean());
+      case('/ajuste'):
+      return MaterialPageRoute(builder: (_) => const SettingWidget());
       default:
-        return MaterialPageRoute(builder: (_) => const Homescreen());
+      return MaterialPageRoute(builder: (_) => const NavigationScrean());
     }
   }
 }

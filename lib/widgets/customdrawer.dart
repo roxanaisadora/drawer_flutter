@@ -76,40 +76,54 @@ class CustomWidgetHome extends StatelessWidget {
               Navigator.pushReplacementNamed(context, MyRoutes.rAjuste);
             },
           ),
+          const Divider(
+                      height:5,
+                      thickness:3,
+                      color:Color.fromARGB(255, 224, 217, 217)
+                    ),
           ListTile(
-            leading: const Icon(Icons.person),
+            leading: const Icon(Icons.call),
             minLeadingWidth : 10,
-            title:const Text('Mi perfil'),
-            onTap: (){
-              Navigator.pushReplacementNamed(context, MyRoutes.rPerfil);
-            },
+            title:const Text('Atención al cliente'),
+            onTap: (){},
           ),
           ListTile(
-            leading: const Icon(Icons.shopping_cart),
+            leading: const Icon(Icons.question_answer),
             minLeadingWidth : 10,
-            title:const Text('Compras'),
-            onTap: (){
-              Navigator.pushReplacementNamed(context, MyRoutes.rPerfil);
-            },
+            title:const Text('Preguntas frecuentes'),
+            onTap: (){},
           ),
           ListTile(
-            leading: const Icon(Icons.search_off_rounded),
+            leading: const Icon(Icons.call_end),
             minLeadingWidth : 10,
-            title:const Text('Buscar'),
-            onTap: (){
-              Navigator.pushReplacementNamed(context, MyRoutes.rPerfil);
-            },
+            title:const Text('Contacto'),
+            onTap: (){},
+          ),
+          ListTile(
+            leading: const Icon(Icons.security),
+            minLeadingWidth : 10,
+            title:const Text('Compra segura'),
+            onTap: (){},
+          ),
+          ListTile(
+            leading: const Icon(Icons.question_mark_outlined),
+            minLeadingWidth : 10,
+            title:const Text('Acerca de Shine Clothes'),
+            onTap: (){},
           ),
           const Divider(
                       height:5,
                       thickness:3,
                       color:Color.fromARGB(255, 224, 217, 217)
                     ),
-          
+          ListTile(
+            leading: const Icon(Icons.offline_bolt),
+            minLeadingWidth : 10,
+            title:const Text('Cerrar sesion'),
+            onTap: (){},
+          ),
           ],
         ),
-        
-
       );
   }
 }
