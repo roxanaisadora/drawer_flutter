@@ -149,13 +149,13 @@ class _SettingWidgetState extends State<SettingWidget> {
               )
                 ],
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 20),
               MaterialButton(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10)
                 ),
-                color: Colors.amber,
-                child: const Text('Guardar', style: TextStyle(color: Colors.white, fontSize: 25),),
+                color: Colors.blueAccent,
+                child: const Text('Guardar', style: TextStyle(color: Colors.white, fontSize: 20),),
                 onPressed: (){
                   guardar();
                 })

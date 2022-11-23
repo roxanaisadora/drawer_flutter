@@ -6,6 +6,7 @@ class MyRoutes {
   static const String rAjuste = '/ajuste';
   static const String rPerfil = '/perfil';
   static const String rLogin = '/login';
+  static const String rAtention = '/help/atention';
 
 
   static Route<dynamic> generateRoute(RouteSettings settings){
@@ -16,6 +17,8 @@ class MyRoutes {
       return MaterialPageRoute(builder: (_) => const SettingWidget());
       case ('/login'):
         return MaterialPageRoute(builder: (_) => const LoginScreen());
+      case ('/help/atention'):
+        return MaterialPageRoute(builder: (_) => const Atention());
       default:
       return MaterialPageRoute(builder: (_) => const NavigationScrean());
     }

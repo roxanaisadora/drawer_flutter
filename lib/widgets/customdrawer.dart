@@ -44,15 +44,13 @@ class CustomWidgetHome extends StatelessWidget {
                   ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(left: 100),
+                    padding: const EdgeInsets.only(left: 110),
                     child: SizedBox(
                       height: 160,
                       width: 230,
                       child: Column(mainAxisAlignment: MainAxisAlignment.center,crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                        (Preferences.nombre == '')?const Text('Ingrese su nombre', style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),):Text(Preferences.nombre, style: const TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),),
-                        
-                        (Preferences.profesion == '')?const Text('Ingrese su profesion', style: TextStyle(color: Colors.white, fontSize: 13, fontWeight: FontWeight.bold),):Text(Preferences.profesion, style: const TextStyle(color: Colors.white, fontSize: 13, fontWeight: FontWeight.bold),)
+                        (Preferences.nombre == '')?const Text('Ingrese su nombre', style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.bold),):Text(Preferences.nombre, style: const TextStyle(color: Colors.white, fontSize: 17, fontWeight: FontWeight.bold),),
                       ]),
                     ),
                   )
@@ -85,7 +83,9 @@ class CustomWidgetHome extends StatelessWidget {
             leading: const Icon(Icons.call),
             minLeadingWidth : 10,
             title:const Text('Atención al cliente'),
-            onTap: (){},
+            onTap: (){
+              Navigator.pushReplacementNamed(context, MyRoutes.rAtention);
+            },
           ),
           ListTile(
             leading: const Icon(Icons.question_answer),
