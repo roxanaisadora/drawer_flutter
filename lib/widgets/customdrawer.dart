@@ -76,40 +76,8 @@ class CustomWidgetHome extends StatelessWidget {
               Navigator.pushReplacementNamed(context, MyRoutes.rAjuste);
             },
           ),
-          ListTile(
-            leading: const Icon(Icons.person),
-            minLeadingWidth : 10,
-            title:const Text('Mi perfil'),
-            onTap: (){
-              Navigator.pushReplacementNamed(context, MyRoutes.rPerfil);
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.shopping_cart),
-            minLeadingWidth : 10,
-            title:const Text('Compras'),
-            onTap: (){
-              Navigator.pushReplacementNamed(context, MyRoutes.rPerfil);
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.search_off_rounded),
-            minLeadingWidth : 10,
-            title:const Text('Buscar'),
-            onTap: (){
-              Navigator.pushReplacementNamed(context, MyRoutes.rPerfil);
-            },
-          ),
-          const Divider(
-                      height:5,
-                      thickness:3,
-                      color:Color.fromARGB(255, 224, 217, 217)
-                    ),
-          
           ],
         ),
-        
-
       );
   }
 }

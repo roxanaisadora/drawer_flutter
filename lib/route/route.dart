@@ -9,13 +9,11 @@ class MyRoutes{
   static Route<dynamic> generateRoute(RouteSettings settings){
     switch(settings.name){
       case('/Home'):
-      return MaterialPageRoute(builder: (_) => const Homescreen());
+      return MaterialPageRoute(builder: (_) => const NavigationScrean());
       case('/ajuste'):
       return MaterialPageRoute(builder: (_) => const SettingWidget());
-      case('/perfil'):
-      return MaterialPageRoute(builder: (_) => const MyPerfilScreen());
       default:
-      return MaterialPageRoute(builder: (_) => const Homescreen());
+      return MaterialPageRoute(builder: (_) => const NavigationScrean());
     }
   }
 }

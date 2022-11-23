@@ -54,8 +54,9 @@ class Homescreen extends StatelessWidget {
             : const Color.fromARGB(255, 133, 81, 116),
         title: const Text('Shine Clothes'),
         centerTitle: true,
-actions: const [Icon(Icons.shopping_cart_outlined)],
+        actions: const [Icon(Icons.shopping_cart_outlined)],
       ),
+      
       drawer: const CustomWidgetHome(),
       body: ListView(
         children: [
