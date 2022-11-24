@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:sesion_09/preferences/preference.dart';
+import 'package:sesion_09/screens/profile/pay.dart';
 import 'package:sesion_09/widgets/index.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MyPerfilScreen extends StatelessWidget {
   const MyPerfilScreen({super.key});
@@ -81,7 +81,7 @@ class MyPerfilScreen extends StatelessWidget {
                   children: [
                     const SizedBox(height: 15,),
                     SizedBox(
-                      height: 80,
+                      height: 65,
                       width: double.infinity,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -92,8 +92,8 @@ class MyPerfilScreen extends StatelessWidget {
                             child: Icon(Icons.mail),),
       
                             Padding(
-                              padding: const EdgeInsets.only(top: 8),
-                              child: Container(height: 30, width: 200,child: const Text('E-mail',style: TextStyle(fontSize: 16), ),),
+                              padding: const EdgeInsets.only(top: 3),
+                              child: Container(height: 25, width: 200,child: const Text('E-mail',style: TextStyle(fontSize: 16), ),),
                             ),
                           ],),
                           Padding(
@@ -114,7 +114,7 @@ class MyPerfilScreen extends StatelessWidget {
                     ),
 
                     SizedBox(
-                      height: 80,
+                      height: 65,
                       width: double.infinity,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -124,8 +124,8 @@ class MyPerfilScreen extends StatelessWidget {
                             const SizedBox(height: 30, width: 60,
                             child: Icon(Icons.phone_android),),
                             Padding(
-                              padding: const EdgeInsets.only(top: 8),
-                              child: Container(height: 30, width: 200,child: const Text('Phone',style: TextStyle(fontSize: 16), ),),
+                              padding: const EdgeInsets.only(top: 3),
+                              child: Container(height: 25, width: 200,child: const Text('Phone',style: TextStyle(fontSize: 16), ),),
                             ),
                           ],),
                           Padding(
@@ -139,6 +139,146 @@ class MyPerfilScreen extends StatelessWidget {
                         ],
                       ),
                     ),
+                    const Divider(
+                      height:5,
+                      thickness:3,
+                      color:Color.fromARGB(255, 224, 217, 217)
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20, left: 20),
+                      child: InkWell(
+                        onTap: () {},
+                        child: SizedBox(
+                                width: double.infinity,
+                                height: 60,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Row(children: const[
+                                    Icon(Icons.train),
+                                    SizedBox(width: 20,),
+                                    Text('Mis pedidos', style: TextStyle(fontSize: 16),),
+                                    ],),
+                                    const Icon(Icons.keyboard_arrow_right, size: 35,),
+                                  ],
+                                ),
+                              ),
+                      ),
+                    ),
+                    const Divider(
+                      height:5,
+                      thickness:3,
+                      color:Color.fromARGB(255, 224, 217, 217)
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20, left: 20),
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=> const PayProfile(),
+                  ),);
+                        },
+                        child: SizedBox(
+                                width: double.infinity,
+                                height: 60,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Row(children: const[
+                                    Icon(Icons.card_giftcard),
+                                    SizedBox(width: 20,),
+                                    Text('Metodo de pago', style: TextStyle(fontSize: 16),),
+                                    ],),
+                                    const Icon(Icons.keyboard_arrow_right, size: 35,),
+                                  ],
+                                ),
+                              ),
+                      ),
+                    ),
+                    const Divider(
+                      height:5,
+                      thickness:3,
+                      color:Color.fromARGB(255, 224, 217, 217)
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20, left: 20),
+                      child: InkWell(
+                        onTap: () {},
+                        child: SizedBox(
+                                width: double.infinity,
+                                height: 60,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Row(children: const[
+                                    Icon(Icons.contact_mail),
+                                    SizedBox(width: 20,),
+                                    Text('Mis direcciones de envio', style: TextStyle(fontSize: 16),),
+                                    ],),
+                                    const Icon(Icons.keyboard_arrow_right, size: 35,),
+                                  ],
+                                ),
+                              ),
+                      ),
+                    ),
+                    const Divider(
+                      height:5,
+                      thickness:3,
+                      color:Color.fromARGB(255, 224, 217, 217)
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20, left: 20),
+                      child: InkWell(
+                        onTap: () {},
+                        child: SizedBox(
+                                width: double.infinity,
+                                height: 60,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Row(children: const[
+                                    Icon(Icons.money),
+                                    SizedBox(width: 20,),
+                                    Text('Mis datos fiscales', style: TextStyle(fontSize: 16),),
+                                    ],),
+                                    const Icon(Icons.keyboard_arrow_right, size: 35,),
+                                  ],
+                                ),
+                              ),
+                      ),
+                    ),
+                    const Divider(
+                      height:5,
+                      thickness:3,
+                      color:Color.fromARGB(255, 224, 217, 217)
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 20, left: 20),
+                      child: InkWell(
+                        onTap: () {},
+                        child: SizedBox(
+                                width: double.infinity,
+                                height: 60,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Row(children: const[
+                                    Icon(Icons.notifications),
+                                    SizedBox(width: 20,),
+                                    Text('Notificaciones', style: TextStyle(fontSize: 16),),
+                                    ],),
+                                    const Icon(Icons.keyboard_arrow_right, size: 35,),
+                                  ],
+                                ),
+                              ),
+                      ),
+                    ),
+                    const Divider(
+                      height:5,
+                      thickness:3,
+                      color:Color.fromARGB(255, 224, 217, 217)
+                    ),
+
                   ],
                 )
               )
