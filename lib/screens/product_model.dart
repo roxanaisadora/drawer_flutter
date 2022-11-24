@@ -13,8 +13,8 @@ toList()=>{
   "image":image,
   "title":title,
   "type":type,
-    "descripcion":descripcion,
-    "price":price,
+  "descripcion":descripcion,
+  "price":price,
 } ;  
    
 

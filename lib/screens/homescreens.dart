@@ -16,9 +16,9 @@ class Homescreen extends StatelessWidget {
                 onPressed: () {},
                 style: ButtonStyle(
                     foregroundColor: MaterialStateProperty.all<Color>(
-                        e.id == 1 ? Colors.black : Colors.black),
+                        e.id == 1? Colors.black : Colors.black),
                     backgroundColor: MaterialStateProperty.all<Color>(
-                        e.id == 1 ? Colors.pink : Colors.white),
+                        e.id == 1 ? Color.fromARGB(255, 17, 33, 77) : Color.fromARGB(255, 67, 58, 113)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30)))),
@@ -53,7 +53,7 @@ class Homescreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: (Preferences.genero != 1)
             ? const  Color.fromARGB(255, 252, 248, 249)
-            : Color.fromARGB(255, 247, 246, 244),
+            : const Color.fromARGB(255, 247, 246, 244),
         title: const Text('Shine Clothes',style: TextStyle(color: Color.fromARGB(255, 12, 12, 12),fontSize: 30,fontWeight: FontWeight.bold),),
         centerTitle: true,
         actions: <Widget>[
@@ -73,7 +73,7 @@ class Homescreen extends StatelessWidget {
       body: ListView(
         children: [
           Padding(
-            padding: const EdgeInsets.all(8),
+            padding: const EdgeInsets.all(3),
             child: Stack(
               children: [
                 ClipRRect(
@@ -91,7 +91,7 @@ class Homescreen extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 60,
+            height: 100,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: builCategories(),
