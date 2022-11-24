@@ -91,25 +91,33 @@ class CustomWidgetHome extends StatelessWidget {
             leading: const Icon(Icons.question_answer),
             minLeadingWidth : 10,
             title:const Text('Preguntas frecuentes'),
-            onTap: (){},
+            onTap: (){
+              Navigator.pushReplacementNamed(context, MyRoutes.rQuestion);
+            },
           ),
           ListTile(
             leading: const Icon(Icons.call_end),
             minLeadingWidth : 10,
             title:const Text('Contacto'),
-            onTap: (){},
+            onTap: (){
+              Navigator.pushReplacementNamed(context, MyRoutes.rContacto);
+            },
           ),
           ListTile(
             leading: const Icon(Icons.security),
             minLeadingWidth : 10,
             title:const Text('Compra segura'),
-            onTap: (){},
+            onTap: (){
+              Navigator.pushReplacementNamed(context, MyRoutes.rCompraSegura);
+            },
           ),
           ListTile(
             leading: const Icon(Icons.question_mark_outlined),
             minLeadingWidth : 10,
             title:const Text('Acerca de Shine Clothes'),
-            onTap: (){},
+            onTap: (){
+              Navigator.pushReplacementNamed(context, MyRoutes.rInfo);
+            },
           ),
           const Divider(
                       height:5,
@@ -120,7 +128,9 @@ class CustomWidgetHome extends StatelessWidget {
             leading: const Icon(Icons.offline_bolt),
             minLeadingWidth : 10,
             title:const Text('Cerrar sesion'),
-            onTap: (){},
+            onTap: (){
+              Navigator.pushReplacementNamed(context, MyRoutes.rLogin);
+            },
           ),
           ],
         ),

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../widgets/index.dart';
+import 'package:sesion_09/widgets/index.dart';
 
 class Atention extends StatelessWidget {
   const Atention({super.key});
