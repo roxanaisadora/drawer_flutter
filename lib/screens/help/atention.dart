@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sesion_09/widgets/index.dart';
+import 'package:quickalert/quickalert.dart';
+
 
 class Atention extends StatelessWidget {
   const Atention({super.key});
@@ -71,10 +73,16 @@ class Atention extends StatelessWidget {
             ),
             MaterialButton(
               color: Colors.blue,
-              onPressed: () {},
+              onPressed: () {
+                QuickAlert.show(
+                context: context,
+                type: QuickAlertType.success,
+                text: 'Mensaje enviado',
+                );
+              },
               child: const Text('Enviar solicitud',style: TextStyle(color: Colors.white)),
               ),
-            const SizedBox(height: 10,)
+            const SizedBox(height: 30,)
           ],
         )
       ),

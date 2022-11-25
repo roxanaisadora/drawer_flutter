@@ -16,7 +16,6 @@ class _NavigationScreanState extends State<NavigationScrean> {
     Homescreen(),
     Text('1'),
     Text('2'),
-    Text('4'),
     MyPerfilScreen()
   ];
 
@@ -41,7 +40,6 @@ class _NavigationScreanState extends State<NavigationScrean> {
         items:[
           const BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.house, color: Colors.white), label: 'Inicio'),
           const BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.carSide, color: Colors.white), label: 'Categoria'),
-          const BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.bagShopping, color: Colors.white), label: 'Pedidos'),
           const BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.heart, color: Colors.white), label: 'favoritos'),
           const BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.user, color: Colors.white), label: 'Mi cuenta'),
         ],

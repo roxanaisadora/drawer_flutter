@@ -100,13 +100,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "10.2.1"
-  full_screen_menu:
-    dependency: "direct main"
-    description:
-      name: full_screen_menu
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.0"
   js:
     dependency: transitive
     description:
@@ -205,6 +198,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "6.0.4"
+  quickalert:
+    dependency: "direct main"
+    description:
+      name: quickalert
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   rflutter_alert:
     dependency: "direct main"
     description:

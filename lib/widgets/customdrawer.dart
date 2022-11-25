@@ -80,7 +80,7 @@ class CustomWidgetHome extends StatelessWidget {
                       color:Color.fromARGB(255, 224, 217, 217)
                     ),
           ListTile(
-            leading: const Icon(Icons.call),
+            leading: const Icon(Icons.face),
             minLeadingWidth : 10,
             title:const Text('Atención al cliente'),
             onTap: (){
@@ -88,7 +88,7 @@ class CustomWidgetHome extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.question_answer),
+            leading: const Icon(Icons.help),
             minLeadingWidth : 10,
             title:const Text('Preguntas frecuentes'),
             onTap: (){
@@ -96,7 +96,7 @@ class CustomWidgetHome extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.call_end),
+            leading: const Icon(Icons.call),
             minLeadingWidth : 10,
             title:const Text('Contacto'),
             onTap: (){
@@ -112,7 +112,7 @@ class CustomWidgetHome extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.question_mark_outlined),
+            leading: const Icon(Icons.error),
             minLeadingWidth : 10,
             title:const Text('Acerca de Shine Clothes'),
             onTap: (){
@@ -125,7 +125,7 @@ class CustomWidgetHome extends StatelessWidget {
                       color:Color.fromARGB(255, 224, 217, 217)
                     ),
           ListTile(
-            leading: const Icon(Icons.offline_bolt),
+            leading: const Icon(Icons.highlight_off),
             minLeadingWidth : 10,
             title:const Text('Cerrar sesion'),
             onTap: (){

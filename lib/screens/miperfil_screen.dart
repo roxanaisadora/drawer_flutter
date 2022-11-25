@@ -144,141 +144,48 @@ class MyPerfilScreen extends StatelessWidget {
                       thickness:3,
                       color:Color.fromARGB(255, 224, 217, 217)
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 20, left: 20),
-                      child: InkWell(
-                        onTap: () {},
-                        child: SizedBox(
-                                width: double.infinity,
-                                height: 60,
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Row(children: const[
-                                    Icon(Icons.train),
-                                    SizedBox(width: 20,),
-                                    Text('Mis pedidos', style: TextStyle(fontSize: 16),),
-                                    ],),
-                                    const Icon(Icons.keyboard_arrow_right, size: 35,),
-                                  ],
-                                ),
-                              ),
-                      ),
-                    ),
-                    const Divider(
-                      height:5,
-                      thickness:3,
-                      color:Color.fromARGB(255, 224, 217, 217)
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 20, left: 20),
-                      child: InkWell(
-                        onTap: () {
+                    CardProfile(
+                      icon:const Icon(Icons.card_giftcard),
+                      title:'Metodo de pago',
+                      onTap: () {
                           Navigator.push(context, MaterialPageRoute(
-                  builder: (context)=> const PayProfile(),
-                  ),);
+                          builder: (context)=> const PayProfile(),
+                          ),);
                         },
-                        child: SizedBox(
-                                width: double.infinity,
-                                height: 60,
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Row(children: const[
-                                    Icon(Icons.card_giftcard),
-                                    SizedBox(width: 20,),
-                                    Text('Metodo de pago', style: TextStyle(fontSize: 16),),
-                                    ],),
-                                    const Icon(Icons.keyboard_arrow_right, size: 35,),
-                                  ],
-                                ),
-                              ),
                       ),
-                    ),
                     const Divider(
                       height:5,
                       thickness:3,
                       color:Color.fromARGB(255, 224, 217, 217)
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 20, left: 20),
-                      child: InkWell(
-                        onTap: () {},
-                        child: SizedBox(
-                                width: double.infinity,
-                                height: 60,
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Row(children: const[
-                                    Icon(Icons.contact_mail),
-                                    SizedBox(width: 20,),
-                                    Text('Mis direcciones de envio', style: TextStyle(fontSize: 16),),
-                                    ],),
-                                    const Icon(Icons.keyboard_arrow_right, size: 35,),
-                                  ],
-                                ),
-                              ),
+                    CardProfile(
+                      icon:const Icon(Icons.contact_mail),
+                      title:'Mis direcciones de envio',
+                      onTap: () {
+                          Navigator.push(context, MaterialPageRoute(
+                          builder: (context)=> const PayProfile(),
+                          ),);
+                        },
                       ),
-                    ),
                     const Divider(
                       height:5,
                       thickness:3,
                       color:Color.fromARGB(255, 224, 217, 217)
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 20, left: 20),
-                      child: InkWell(
-                        onTap: () {},
-                        child: SizedBox(
-                                width: double.infinity,
-                                height: 60,
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Row(children: const[
-                                    Icon(Icons.money),
-                                    SizedBox(width: 20,),
-                                    Text('Mis datos fiscales', style: TextStyle(fontSize: 16),),
-                                    ],),
-                                    const Icon(Icons.keyboard_arrow_right, size: 35,),
-                                  ],
-                                ),
-                              ),
+                    CardProfile(
+                      icon:const Icon(Icons.money),
+                      title:'Mis datos fiscales',
+                      onTap: () {
+                          Navigator.push(context, MaterialPageRoute(
+                          builder: (context)=> const PayProfile(),
+                          ),);
+                        },
                       ),
-                    ),
                     const Divider(
                       height:5,
                       thickness:3,
                       color:Color.fromARGB(255, 224, 217, 217)
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 20, left: 20),
-                      child: InkWell(
-                        onTap: () {},
-                        child: SizedBox(
-                                width: double.infinity,
-                                height: 60,
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Row(children: const[
-                                    Icon(Icons.notifications),
-                                    SizedBox(width: 20,),
-                                    Text('Notificaciones', style: TextStyle(fontSize: 16),),
-                                    ],),
-                                    const Icon(Icons.keyboard_arrow_right, size: 35,),
-                                  ],
-                                ),
-                              ),
-                      ),
-                    ),
-                    const Divider(
-                      height:5,
-                      thickness:3,
-                      color:Color.fromARGB(255, 224, 217, 217)
-                    ),
-
                   ],
                 )
               )
