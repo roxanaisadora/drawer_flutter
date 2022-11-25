@@ -18,7 +18,7 @@ class Homescreen extends StatelessWidget {
                     foregroundColor: MaterialStateProperty.all<Color>(
                         e.id == 1? Colors.black : Colors.black),
                     backgroundColor: MaterialStateProperty.all<Color>(
-                        e.id == 1 ? Color.fromARGB(255, 240, 242, 247) : Color.fromARGB(255, 248, 248, 248)),
+                        e.id == 1 ? const Color.fromARGB(255, 240, 242, 247) : const Color.fromARGB(255, 248, 248, 248)),
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30)))),
