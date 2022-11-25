@@ -1,6 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:sesion_09/pages/slider.dart';
+
 import 'package:sesion_09/widgets/index.dart';
 import 'package:sesion_09/preferences/preference.dart';
 import 'package:sesion_09/screens/data.dart';
@@ -72,12 +74,12 @@ class Homescreen extends StatelessWidget {
       drawer: const CustomWidgetHome(),
       body: ListView(
         children: [
-          Padding(
+           Padding(
             padding: const EdgeInsets.all(3),
             child: Stack(
               children: [
                 ClipRRect(
-                  // ignore: sort_child_properties_last
+                  
                   child: Image.asset("assets/banner4.png"),
                   // borderRadius: BorderRadius.circular(10),
                 ),
@@ -90,8 +92,10 @@ class Homescreen extends StatelessWidget {
               ],
             ),
           ),
+         
+            const SizedBox(height: 15,),
           SizedBox(
-            height: 100,
+            height: 80,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: builCategories(),
@@ -134,7 +138,7 @@ class Homescreen extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Image.asset(e.image,height: 90,width: 90),
+                            Image.asset(e.image,height: 100,width: 100),
                             const SizedBox(height: 5,),
                             RichText(textAlign: TextAlign.start,
                             text: TextSpan(text: e.type,
@@ -164,7 +168,7 @@ class Homescreen extends StatelessWidget {
                                 text: TextSpan(text: "\$ ${e.price}",
                                 style: const TextStyle(
                                   color: Colors.orange,
-                                  fontSize: 18,
+                                  fontSize: 15,
                                   fontWeight: FontWeight.bold
                                 )
                                 
@@ -172,12 +176,14 @@ class Homescreen extends StatelessWidget {
                                 
                                 ),
                                 const Spacer(),
+                                IconButton(onPressed: (){}, icon: const Icon(Icons.favorite_border_outlined)),
+                                const Spacer(),
                                 ElevatedButton(onPressed: (){},
                                  style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all<Color>(Colors.black),
+                                  backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
                                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)))
                                  ),
-                                 child: const Icon(Icons.add,color:Colors.white),
+                                 child: const Icon(Icons.shopping_cart_outlined,color:Colors.black),
                                  
                                  )
                               ],
@@ -192,31 +198,7 @@ class Homescreen extends StatelessWidget {
         ],
 
       ),
-      // floatingActionButtonLocation: FloatingActionButtonLocation.startDocked,
-      // floatingActionButton: FloatingActionButton(
-      //   backgroundColor: Colors.orange,
-      //   onPressed: (){
 
-      //   },
-      //   child: Container(
-      //     margin: EdgeInsets.all(15),
-      //     child: Icon(Icons.home_outlined,color:Colors.white),
-
-      //   ),
-      //   elevation: 4,
-      // ) ,
-      // bottomNavigationBar: BottomAppBar(
-      //   child: Row(
-      //     mainAxisAlignment:MainAxisAlignment.spaceBetween,
-      //     children: [
-      //        const SizedBox(height: 30,),
-      //       IconButton(onPressed: (){}, icon: Image.asset("assets/icono2.png"),),
-      //        IconButton(onPressed: (){}, icon: Image.asset("assets/icono2.png"),),
-      //         IconButton(onPressed: (){}, icon: Image.asset("assets/icono2.png"),),
-      //     const SizedBox(height: 2,)
-      //     ],
-      //   ),
-      // ),
     );
   }
 }
