@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:sesion_09/preferences/preference.dart';
-import 'package:sesion_09/screens/profile/pay.dart';
+import 'package:sesion_09/screens/index.dart';
 import 'package:sesion_09/widgets/index.dart';
 
 class MyPerfilScreen extends StatelessWidget {
@@ -163,7 +163,7 @@ class MyPerfilScreen extends StatelessWidget {
                       title:'Mis direcciones de envio',
                       onTap: () {
                           Navigator.push(context, MaterialPageRoute(
-                          builder: (context)=> const PayProfile(),
+                          builder: (context)=> const DirectionProfile(),
                           ),);
                         },
                       ),
@@ -177,7 +177,7 @@ class MyPerfilScreen extends StatelessWidget {
                       title:'Mis datos fiscales',
                       onTap: () {
                           Navigator.push(context, MaterialPageRoute(
-                          builder: (context)=> const PayProfile(),
+                          builder: (context)=> const FiscalProfile(),
                           ),);
                         },
                       ),

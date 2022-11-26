@@ -8,5 +8,10 @@ export 'package:sesion_09/screens/help/preguntas.dart';
 export 'package:sesion_09/screens/help/comprasegura.dart';
 export 'package:sesion_09/screens/help/contacto.dart';
 export 'package:sesion_09/screens/help/info.dart';
+export 'package:sesion_09/screens/profile/pay.dart';
+export 'package:sesion_09/screens/profile/direction.dart';
+export 'package:sesion_09/screens/profile/fiscal.dart';
+
+
 
 

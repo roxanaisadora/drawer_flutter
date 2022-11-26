@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
-class PayProfile extends StatelessWidget {
-  const PayProfile({super.key});
+class FiscalProfile extends StatelessWidget {
+  const FiscalProfile({super.key});
 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text ('Mi dirección fiscal'),
+        title: const Text ('Mis metodos de pago'),
         centerTitle: true,
       ),
       body: Column(
@@ -25,9 +25,9 @@ class PayProfile extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Row(children: const[
-                                Icon(Icons.location_city),
+                                Icon(Icons.card_membership),
                                 SizedBox(width: 20,),
-                                Text('Agregar nueva dirección fiscal', style: TextStyle(fontSize: 16),),
+                                Text('Agregar nueva tarjeta', style: TextStyle(fontSize: 16),),
                                 ],),
                                 const Icon(Icons.keyboard_arrow_right, size: 35,),
                               ],
@@ -45,35 +45,30 @@ _onAlertWithCustomContentPressed(context) {
     Alert(
         context: context,
         content: Column(
-          children: <Widget>[
-            SizedBox(
-                    width: 200,
-                    height: 150,
-                    child: Image.asset('assets/credit.png', fit: BoxFit.fill,),
-                  ),
-            const TextField(
+          children: const <Widget>[
+            TextField(
               keyboardType: TextInputType.number,
               obscureText: true,
               decoration: InputDecoration(
-                labelText: 'Numero de tarjeta',
+                labelText: 'Pais',
               ),
             ),
-            const TextField(
+            TextField(
               keyboardType: TextInputType.number,
               obscureText: true,
               decoration: InputDecoration(
-                labelText: 'Vigencia',
+                labelText: 'Region',
               ),
             ),
-            const TextField(
+            TextField(
               decoration: InputDecoration(
                 labelText: 'Nombre del titular',
               ),
             ),
-            const TextField(
+            TextField(
               obscureText: true,
               decoration: InputDecoration(
-                labelText: 'Dirección',
+                labelText: 'Distrito',
               ),
             ),
           ],
