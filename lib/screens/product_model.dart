@@ -7,14 +7,13 @@ class ProductModel {
   double price;
   ProductModel(this.id,this.image,this.title,this.type,this.descripcion,this.price);
  
-  Map<String,dynamic>
-toList()=>{
+  Map<String,dynamic>toList()=>{
   "id":id,
   "image":image,
   "title":title,
   "type":type,
-    "descripcion":descripcion,
-    "price":price,
+  "descripcion":descripcion,
+  "price":price,
 } ;  
    
 

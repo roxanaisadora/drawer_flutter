@@ -11,6 +11,8 @@ class MyRoutes {
   static const String rCompraSegura = '/help/comprasegura';
   static const String rContacto = '/help/contacto';
   static const String rInfo = '/help/info';
+   static const String rFavoritePage = '/FavoritePage';
+
 
   static Route<dynamic> generateRoute(RouteSettings settings){
     switch(settings.name){
