@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:sesion_09/pages/slider.dart';
 import 'package:sesion_09/route/route.dart';

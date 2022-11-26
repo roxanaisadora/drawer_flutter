@@ -6,6 +6,7 @@ import 'package:sesion_09/preferences/preference.dart';
 import 'package:sesion_09/providers/theme_provider.dart';
 import 'package:sesion_09/widgets/index.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:quickalert/quickalert.dart';
 
 class SettingWidget extends StatefulWidget {
   const SettingWidget({super.key});
@@ -149,14 +150,19 @@ class _SettingWidgetState extends State<SettingWidget> {
               )
                 ],
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 20),
               MaterialButton(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10)
                 ),
-                color: Colors.amber,
-                child: const Text('Guardar', style: TextStyle(color: Colors.white, fontSize: 25),),
+                color: Colors.blueAccent,
+                child: const Text('Guardar', style: TextStyle(color: Colors.white, fontSize: 20),),
                 onPressed: (){
+                  QuickAlert.show(
+                context: context,
+                type: QuickAlertType.success,
+                text: 'Se ha guardado sus datos',
+                );
                   guardar();
                 })
             ],
