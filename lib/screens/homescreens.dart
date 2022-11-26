@@ -246,9 +246,9 @@ class Homescreen extends StatelessWidget {
                                               color: Color.fromARGB(
                                                   255, 235, 27, 31),
                                             )),
-                                        IconButton(
-                                            onPressed: () {},
-                                            icon: const Icon(
+                                        InkWell(
+                                            onTap: () {},
+                                            child: const Icon(
                                               Icons.shopping_cart_outlined,
                                               color: Colors.black,
                                             )),
