@@ -9,7 +9,7 @@ class FiscalProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text ('Mis metodos de pago'),
+        title: const Text ('Mis datos fiscales'),
         centerTitle: true,
       ),
       body: Column(
@@ -27,7 +27,7 @@ class FiscalProfile extends StatelessWidget {
                                 Row(children: const[
                                 Icon(Icons.card_membership),
                                 SizedBox(width: 20,),
-                                Text('Agregar nueva tarjeta', style: TextStyle(fontSize: 16),),
+                                Text('Mi direccion fiscal', style: TextStyle(fontSize: 16),),
                                 ],),
                                 const Icon(Icons.keyboard_arrow_right, size: 35,),
                               ],
@@ -47,28 +47,33 @@ _onAlertWithCustomContentPressed(context) {
         content: Column(
           children: const <Widget>[
             TextField(
-              keyboardType: TextInputType.number,
-              obscureText: true,
+              keyboardType: TextInputType.text,
               decoration: InputDecoration(
                 labelText: 'Pais',
               ),
             ),
             TextField(
-              keyboardType: TextInputType.number,
-              obscureText: true,
+              keyboardType: TextInputType.text,
               decoration: InputDecoration(
                 labelText: 'Region',
               ),
             ),
             TextField(
+              keyboardType: TextInputType.text,
               decoration: InputDecoration(
-                labelText: 'Nombre del titular',
+                labelText: 'Distrito',
               ),
             ),
             TextField(
-              obscureText: true,
+              keyboardType: TextInputType.text,
               decoration: InputDecoration(
-                labelText: 'Distrito',
+                labelText: 'Dirección',
+              ),
+            ),
+            TextField(
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                labelText: 'RUC',
               ),
             ),
           ],

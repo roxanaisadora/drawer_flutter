@@ -7,3 +7,4 @@ export 'package:sesion_09/widgets/helpwidget/question.dart';
 export 'package:sesion_09/widgets/helpwidget/modalscreen.dart';
 export 'package:sesion_09/widgets/helpwidget/card.dart';
 export 'package:sesion_09/widgets/profile/cardprofile.dart';
+export 'package:sesion_09/widgets/category/categorycard.dart';

@@ -14,7 +14,7 @@ class _NavigationScreanState extends State<NavigationScrean> {
 
   static const List<Widget> _widegtOptions = [
     Homescreen(),
-    Text('1'),
+    Category(),
     Text('2'),
     MyPerfilScreen()
   ];
