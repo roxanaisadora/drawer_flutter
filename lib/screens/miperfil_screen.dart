@@ -1,8 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:sesion_09/preferences/preference.dart';
+import 'package:sesion_09/screens/index.dart';
 import 'package:sesion_09/widgets/index.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MyPerfilScreen extends StatelessWidget {
   const MyPerfilScreen({super.key});
@@ -81,7 +81,7 @@ class MyPerfilScreen extends StatelessWidget {
                   children: [
                     const SizedBox(height: 15,),
                     SizedBox(
-                      height: 80,
+                      height: 65,
                       width: double.infinity,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -92,8 +92,8 @@ class MyPerfilScreen extends StatelessWidget {
                             child: Icon(Icons.mail),),
       
                             Padding(
-                              padding: const EdgeInsets.only(top: 8),
-                              child: Container(height: 30, width: 200,child: const Text('E-mail',style: TextStyle(fontSize: 16), ),),
+                              padding: const EdgeInsets.only(top: 3),
+                              child: Container(height: 25, width: 200,child: const Text('E-mail',style: TextStyle(fontSize: 16), ),),
                             ),
                           ],),
                           Padding(
@@ -114,7 +114,7 @@ class MyPerfilScreen extends StatelessWidget {
                     ),
 
                     SizedBox(
-                      height: 80,
+                      height: 65,
                       width: double.infinity,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -124,8 +124,8 @@ class MyPerfilScreen extends StatelessWidget {
                             const SizedBox(height: 30, width: 60,
                             child: Icon(Icons.phone_android),),
                             Padding(
-                              padding: const EdgeInsets.only(top: 8),
-                              child: Container(height: 30, width: 200,child: const Text('Phone',style: TextStyle(fontSize: 16), ),),
+                              padding: const EdgeInsets.only(top: 3),
+                              child: Container(height: 25, width: 200,child: const Text('Phone',style: TextStyle(fontSize: 16), ),),
                             ),
                           ],),
                           Padding(
@@ -138,6 +138,53 @@ class MyPerfilScreen extends StatelessWidget {
                           ),
                         ],
                       ),
+                    ),
+                    const Divider(
+                      height:5,
+                      thickness:3,
+                      color:Color.fromARGB(255, 224, 217, 217)
+                    ),
+                    CardProfile(
+                      icon:const Icon(Icons.card_giftcard),
+                      title:'Metodo de pago',
+                      onTap: () {
+                          Navigator.push(context, MaterialPageRoute(
+                          builder: (context)=> const PayProfile(),
+                          ),);
+                        },
+                      ),
+                    const Divider(
+                      height:5,
+                      thickness:3,
+                      color:Color.fromARGB(255, 224, 217, 217)
+                    ),
+                    CardProfile(
+                      icon:const Icon(Icons.contact_mail),
+                      title:'Mis direcciones de envio',
+                      onTap: () {
+                          Navigator.push(context, MaterialPageRoute(
+                          builder: (context)=> const DirectionProfile(),
+                          ),);
+                        },
+                      ),
+                    const Divider(
+                      height:5,
+                      thickness:3,
+                      color:Color.fromARGB(255, 224, 217, 217)
+                    ),
+                    CardProfile(
+                      icon:const Icon(Icons.money),
+                      title:'Mis datos fiscales',
+                      onTap: () {
+                          Navigator.push(context, MaterialPageRoute(
+                          builder: (context)=> const FiscalProfile(),
+                          ),);
+                        },
+                      ),
+                    const Divider(
+                      height:5,
+                      thickness:3,
+                      color:Color.fromARGB(255, 224, 217, 217)
                     ),
                   ],
                 )
