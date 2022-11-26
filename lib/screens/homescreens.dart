@@ -253,13 +253,12 @@ class Homescreen extends StatelessWidget {
                                   
                                       
                                       IconButton(onPressed: (){  Navigator.pushNamed(context, MyRoutes.rFavoritePage);
-                                        
+                                      }, 
 
-                                      }, icon: const Icon(Icons.favorite_border_outlined,color: Color.fromARGB(255, 235, 27, 31),)),
-                                       IconButton(onPressed: (){  
-                                        
-
-                                      }, icon: const Icon(Icons.shopping_cart_outlined,color: Colors.black,)),],
+                                      icon: const Icon(Icons.favorite_border_outlined,color: Color.fromARGB(255, 235, 27, 31),)),
+                                      
+                                      InkWell(onTap: (){ }, 
+                                       child: const Icon(Icons.shopping_cart_outlined,color: Colors.black,)),],
                                       ),
                                 )
                                     
