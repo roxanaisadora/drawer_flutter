@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:sesion_09/pages/slider.dart';
+import 'package:sesion_09/route/route.dart';
 
 import 'package:sesion_09/widgets/index.dart';
 import 'package:sesion_09/preferences/preference.dart';
@@ -51,12 +52,12 @@ class Homescreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color.fromARGB(255, 173, 214, 247),
       appBar: AppBar(
         backgroundColor: (Preferences.genero != 1)
             ? const  Color.fromARGB(255, 252, 248, 249)
-            : const Color.fromARGB(255, 247, 246, 244),
-        title: const Text('Shine Clothes',style: TextStyle(color: Color.fromARGB(255, 12, 12, 12),fontSize: 30,fontWeight: FontWeight.bold),),
+            : Color.fromARGB(255, 168, 213, 249),
+        title: const Text('Shine Clothes',style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),
         centerTitle: true,
         actions: <Widget>[
           IconButton( icon:const Icon(Icons.notifications_none),
@@ -92,108 +93,121 @@ class Homescreen extends StatelessWidget {
               ],
             ),
           ),
-         
+            
             const SizedBox(height: 15,),
           SizedBox(
-            height: 80,
+            height: 120,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: builCategories(),
             ),
+            
           ),
+          
+          
           const SizedBox(
             height: 10,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: RichText(
-              textAlign: TextAlign.start,
+              textAlign: TextAlign.center,
               text: const TextSpan(
-                  text: "Galeria de modelos",
+                  text: "Galeria de ofertas", 
                   style: TextStyle(
+                    
                       color: Colors.black,
                       fontSize: 20,
                       fontWeight: FontWeight.bold)),
             ),
           ),
-          const SizedBox(height: 10),
-          GridView.count(
-            crossAxisCount: 2,
-            childAspectRatio: 0.9,
-            shrinkWrap: true,
-            physics: const ClampingScrollPhysics(),
-            padding: const EdgeInsets.all(5),
-            children: Data.generateProducts().map(
-              (e) => Card(
-                shape: BeveledRectangleBorder(
-                    borderRadius: BorderRadius.circular(14),
-                    ),
-                    elevation: 0,
-                    child: InkWell(
-                      onTap: (){
+          const SizedBox(height: 5),
+          Padding(
+            padding: const EdgeInsets.all(1),
+            child: GridView.count(
+              crossAxisCount: 2,
+              childAspectRatio: 0.9,
+              shrinkWrap: true,
+              physics: const ClampingScrollPhysics(),
+              padding: const EdgeInsets.all(0),
+              children: Data.generateProducts().map(
+                (e) => Card(
+                  shape: BeveledRectangleBorder(
+                      borderRadius: BorderRadius.circular(14),
+                      ),
+                      elevation: 0,
+                      child: InkWell(
+                        onTap: (){
 
-                      },
-                      child: Container(
-                        margin: const EdgeInsets.only(left: 10,right: 10,top: 5),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Image.asset(e.image,height: 100,width: 100),
-                            const SizedBox(height: 5,),
-                            RichText(textAlign: TextAlign.start,
-                            text: TextSpan(text: e.type,
-                            style: const TextStyle(
-                              color: Colors.orange,
-                              fontSize: 16,
-                            )
-                            
-                            ),
-                            
-                            ),
-                             const SizedBox(height: 5,),
-                            RichText(textAlign: TextAlign.start,
-                            text: TextSpan(text: e.title,
-                            style: const TextStyle(
-                              color: Colors.black,
-                              fontSize: 18,
-                            )
-                            
-                            ),
-                            
-                            ),
-                            const SizedBox(height: 5,),
-                            Row(
-                              children: [
-                                RichText(textAlign: TextAlign.start,
-                                text: TextSpan(text: "\$ ${e.price}",
-                                style: const TextStyle(
-                                  color: Colors.orange,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold
-                                )
-                                
-                                ),
-                                
-                                ),
-                                const Spacer(),
-                                IconButton(onPressed: (){}, icon: const Icon(Icons.favorite_border_outlined)),
-                                const Spacer(),
-                                ElevatedButton(onPressed: (){},
-                                 style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
-                                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)))
-                                 ),
-                                 child: const Icon(Icons.shopping_cart_outlined,color:Colors.black),
-                                 
-                                 )
-                              ],
-                            )
-                          ],
+                        },
+                        child: Container(
+                          margin: const EdgeInsets.only(left: 10,right: 10,top: 5),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Image.asset(e.image,height: 110,width: 110),
+                              const SizedBox(height: 5,),
+                              RichText(textAlign: TextAlign.start,
+                              text: TextSpan(text: e.title,
+                              style: const TextStyle(
+                                color: Colors.red,
+                                fontSize: 16,
+                              )
+                              
+                              ),
+                              
+                              ),
+                               const SizedBox(height: 2,),
+                              RichText(textAlign: TextAlign.start,
+                              text: TextSpan(text: e.type,
+                              style: const TextStyle(
+                                color: Color.fromARGB(215, 132, 75, 75), fontWeight: FontWeight.bold,
+                                fontSize: 13,
+                              )
+                              
+                              ),
+                              
+                              ),
+                             
+                              Row(
+                                children: [
+                                  RichText(textAlign: TextAlign.start,
+                                  text: TextSpan(text: "\$ ${e.price}",
+                                  style: const TextStyle(
+                                    color: Colors.red,
+                                    fontSize: 15,
+                                    fontWeight: FontWeight.bold
+                                  )
+                                  
+                                  ),
+                                  
+                                  ),
+                                  
+                                  IconButton(onPressed: (){  Navigator.pushNamed(context, MyRoutes.rFavoritePage);
+                                    
+
+                                  }, icon: const Icon(Icons.favorite_border_outlined)),
+                                  
+                                  ElevatedButton(onPressed: (){
+                                  
+                                     
+                                  },
+                                   style: ButtonStyle(
+                                    backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)))
+                                   ),
+                                   child: const Icon(Icons.shopping_cart_outlined,color:Colors.black),
+                                   
+                                   )
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       ),
-                    ),
-              ),
-            ).toList(),
+                ),
+              ).toList(),
+            ),
           )
         ],
 

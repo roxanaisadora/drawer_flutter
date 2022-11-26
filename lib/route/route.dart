@@ -6,6 +6,7 @@ class MyRoutes {
   static const String rAjuste = '/ajuste';
   static const String rPerfil = '/perfil';
   static const String rLogin = '/login';
+   static const String rFavoritePage = '/FavoritePage';
 
 
   static Route<dynamic> generateRoute(RouteSettings settings){
