@@ -36,22 +36,22 @@ class Data {
 
   static List<ProductModel> generateCategories() {
     return [
-      ProductModel(1, "assets/top1.png", "EZwear capucha", "Men's Shoes",
+      ProductModel(1, "assets/top3.png", "", "Men's Shoes",
           "men shoes", 99.56),
-      ProductModel(2, "assets/top2.png", "Polera deportiva", "Men's Shoes",
+      ProductModel(2, "assets/top2.png", "", "Men's Shoes",
           "men shoes", 137.56),
       ProductModel(
-          3, "assets/top3.png", "Running", "Men's Shoes", "men shoes", 99.56),
+          3, "assets/top4.png", "", "Men's Shoes", "men shoes", 99.56),
       ProductModel(
-          4, "assets/top4.png", "Rugby", "Men's Shoes", "men shoes", 212.56),
+          4, "assets/top1.png", "", "Men's Shoes", "men shoes", 212.56),
       ProductModel(
-          4, "assets/top5.png", "Rugby", "Men's Shoes", "men shoes", 212.56),
+          4, "assets/top5.png", "", "Men's Shoes", "men shoes", 212.56),
       ProductModel(
-          4, "assets/top1.png", "Rugby", "Men's Shoes", "men shoes", 212.56),
+          4, "assets/top1.png", "", "Men's Shoes", "men shoes", 212.56),
       ProductModel(
-          4, "assets/top1.png", "Rugby", "Men's Shoes", "men shoes", 212.56),
+          4, "assets/top1.png", "", "Men's Shoes", "men shoes", 212.56),
       ProductModel(
-          4, "assets/top1.png", "Rugby", "Men's Shoes", "men shoes", 212.56),
+          4, "assets/top1.png", "", "Men's Shoes", "men shoes", 212.56),
     ];
   }
 }

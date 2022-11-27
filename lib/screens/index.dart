@@ -12,6 +12,6 @@ export 'package:sesion_09/screens/profile/pay.dart';
 export 'package:sesion_09/screens/profile/direction.dart';
 export 'package:sesion_09/screens/profile/fiscal.dart';
 export 'package:sesion_09/screens/category/category.dart';
-
-
+export 'package:sesion_09/screens/category/subcategory.dart';
+export 'package:sesion_09/screens/category/listCategory.dart';
 
