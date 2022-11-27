@@ -1,0 +1,283 @@
+{
+    "items" : [
+        {
+          "title":"Chompas y polerones",
+          "image1": "https://dockersperu.vtexassets.com/arquivos/ids/170416/A1752-0005_1.jpg?v=638040709048200000",
+          "image2": "https://falabella.scene7.com/is/image/FalabellaPE/882401909_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+    
+          "dato2":[
+            {
+              "title":"Hombre",
+              "image1": "https://www.mercadodelima.pe/file/2451a342-c6a2-4349-9153-a7817d8a2987.jpg",
+              "image2": "https://falabella.scene7.com/is/image/FalabellaPE/882359721_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                "data3":[
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18959018_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"280"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/19113880_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"360"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/19113890_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"400"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/19114455_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"439"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/19113885_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"320"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/19113853_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"720"}
+                  ]
+            },
+            {
+              "title":"Mujer",
+              "image1": "https://falabella.scene7.com/is/image/FalabellaPE/882619608_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+              "image2": "https://falabella.scene7.com/is/image/FalabellaPE/882548883_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                "data3":[
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882435183_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"150"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18634892_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"230"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18986720_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"320"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882450766_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"149"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882405467_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"530"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18953012_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"620"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882450723_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"330"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18855858_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"280"}
+                  ]
+            }
+          ]
+        },
+        {
+          "title":"Polos",
+          "image1": "https://fishermen.com.pe/wp-content/uploads/2022/07/Polo-oversize-urban-azul-frontal.jpg",
+          "image2": "https://cdn.shopify.com/s/files/1/0072/4343/2003/products/79.png?v=1664669499&width=823",
+    
+          "dato2":[
+            {
+              "title":"Hombre",
+              "image1": "https://cdn.shopify.com/s/files/1/0072/4343/2003/products/177.png?v=1662364803&width=533",
+              "image2": "https://cdn.shopify.com/s/files/1/0072/4343/2003/products/181.png?v=1662364603",
+                "data3":[
+                  {"image": "https://http2.mlstatic.com/D_NQ_NP_736378-MPE47520040680_092021-W.webp",
+                  "price":"60"},
+                  {"image": "https://home.ripley.com.pe/Attachment/WOP_5/2016278804729/2016278804729_2.jpg",
+                  "price":"580"},
+                  {"image": "https://s.alicdn.com/@sc04/kf/H09d5b87dafd14fd1b533de6ab589487a1.jpg_280x280.jpg",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18777667_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"183"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18957256_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"343"}
+                  ]
+            },
+            {
+              "title":"Mujer",
+              "image1": "https://home.ripley.com.pe/Attachment/WOP_5/2015288733975/2015288733975_2.jpg",
+              "image2": "https://falabella.scene7.com/is/image/FalabellaPE/882547594_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                "data3":[
+                  {"image": "https://guesspe.vtexassets.com/arquivos/ids/457254-800-auto?v=637792618477500000&width=800&height=auto&aspect=true",
+                  "price":"60"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18708842_2?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"50"},
+                  {"image": "https://home.ripley.com.pe/Attachment/WOP_5/2015287908237/2015287908237_2.jpg",
+                  "price":"80"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18468006_2?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"230"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882453689_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"250"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882564171_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"280"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882617337_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"180"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/19176922_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"150"}
+                  ]
+            }
+          ]
+        },
+        {
+          "title":"Casaca",
+          "image1": "https://falabella.scene7.com/is/image/FalabellaPE/882481737_2?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+          "image2": "https://falabella.scene7.com/is/image/FalabellaPE/19044620_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+    
+          "dato2":[
+            {
+              "title":"Hombre",
+              "image1": "https://falabella.scene7.com/is/image/FalabellaPE/18854117_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+              "image2": "https://falabella.scene7.com/is/image/FalabellaPE/19057446_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                "data3":[
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18958262_1?wid=1500&hei=1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/19108582_1?wid=1500&hei=1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/gsc_114299996_959211_1?wid=1500&hei=1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882484996_2?wid=240&hei=240&qlt=70",
+                  "price":"580"}
+                  ]
+            },
+            {
+              "title":"Mujer",
+              "image1": "https://falabella.scene7.com/is/image/FalabellaPE/882438169_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+              "image2": "https://falabella.scene7.com/is/image/FalabellaPE/882437563_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                "data3":[
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882377206_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882455814_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"650"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882437709_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882612236_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"320"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882455753_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"700"}
+                  ]
+            }
+          ]
+        },
+        {
+          "title":"Pantalones y jeans",
+          "image1": "https://falabella.scene7.com/is/image/FalabellaPE/882377778_2?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+          "image2": "https://falabella.scene7.com/is/image/FalabellaPE/882252820_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+    
+          "dato2":[
+            {
+              "title":"Hombre",
+              "image1": "https://falabella.scene7.com/is/image/FalabellaPE/882488814_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+              "image2": "https://falabella.scene7.com/is/image/FalabellaPE/882487018_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                "data3":[
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882488814_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882475587_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882479688_1?wid=1500&hei=1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882482244_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18281514_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"}
+                  
+                  ]
+            },
+            {
+              "title":"Mujer",
+              "image1": "https://falabella.scene7.com/is/image/FalabellaPE/882546300_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+              "image2": "https://falabella.scene7.com/is/image/FalabellaPE/16971443_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                "data3":[
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18949309_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"263"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18859750_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18180499_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"263"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/19315069_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"263"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882540752_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882454805_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"263"}
+                  ]
+            }
+          ]
+        },
+        {
+          "title":"short",
+          "image1": "https://falabella.scene7.com/is/image/FalabellaPE/882487978_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+          "image2": "https://falabella.scene7.com/is/image/FalabellaPE/882545839_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+    
+          "dato2":[
+            {
+              "title":"Hombre",
+              "image1": "https://falabella.scene7.com/is/image/FalabellaPE/882488312_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+              "image2": "https://falabella.scene7.com/is/image/FalabellaPE/882490737_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                "data3":[
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882494232_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882479400_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"320"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/19153262_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18996394_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"320"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/19153300_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/19153566_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882488902_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"320"}
+                  ]
+            },
+            {
+              "title":"Mujer",
+              "image1": "https://falabella.scene7.com/is/image/FalabellaPE/882545570_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+              "image2": "https://falabella.scene7.com/is/image/FalabellaPE/882148659_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                "data3":[
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/19362088_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/19249168_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"360"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18916576_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882455020_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"360"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882544388_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882544933_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"360"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882541555_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882454795_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"580"}
+                  ]
+            }
+          ]
+        },
+        {
+          "title":"Ropa de baño",
+          "image1": "https://falabella.scene7.com/is/image/FalabellaPE/882584725_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+          "image2": "https://falabella.scene7.com/is/image/FalabellaPE/18996307_2?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+    
+          "dato2":[
+            {
+              "title":"Hombre",
+              "image1": "https://falabella.scene7.com/is/image/FalabellaPE/18996255_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+              "image2": "https://falabella.scene7.com/is/image/FalabellaPE/882488531_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                "data3":[
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882491784_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"80"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/17853283_2?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"60"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/18539262_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"130"}
+                  ]
+            },
+            {
+              "title":"Mujer",
+              "image1": "https://falabella.scene7.com/is/image/FalabellaPE/882539315_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+              "image2": "https://falabella.scene7.com/is/image/FalabellaPE/882584332_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                "data3":[
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/19359244_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"120"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/19136458_1?wid=1500&hei=1500&qlt=70",
+                  "price":"320"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882584417_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"120"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882539254_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"260"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882603888_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"302"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882539333_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"400"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/19359233_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"360"},
+                  {"image": "https://falabella.scene7.com/is/image/FalabellaPE/882584305_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70",
+                  "price":"320"}
+                  ]
+            }
+          ]
+        }
+    ]
+}

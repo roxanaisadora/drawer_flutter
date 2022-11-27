@@ -1,7 +1,8 @@
-import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:sesion_09/screens/index.dart';
 import 'package:sesion_09/widgets/index.dart';
+import 'dart:convert';
+import 'package:flutter/services.dart';
 
 class Category extends StatefulWidget {
   const Category({super.key});
@@ -11,105 +12,49 @@ class Category extends StatefulWidget {
 }
 
 class _CategoryState extends State<Category> {
+  List<dynamic> _data = [];
 
-  final List<dynamic> data = [
-    {
-      'title':'aaaaaaaiiiiiiii',
-      'image1': 'https://www.gamarra.com.pe/wp-content/uploads/2020/04/WhatsApp-Image-2020-09-03-at-12.04.42-AM-480x633.jpeg',
-      'image2': 'https://cdn.shopify.com/s/files/1/0393/7701/0733/products/1475-OI_3_1024x1024.png?v=1621483449',
+  Future<void> readJson() async {
+  final String response = await rootBundle.loadString('assets/datacategory.json');
+  final data = await json.decode(response);
+    setState(() {
+      _data = data["items"];
+    });
+  }
 
-      'dato2':[{
-        'title':'aaaaaaa',
-          'image1': 'https://www.gamarra.com.pe/wp-content/uploads/2020/04/WhatsApp-Image-2020-09-03-at-12.04.42-AM-480x633.jpeg',
-          'image2': 'https://cdn.shopify.com/s/files/1/0393/7701/0733/products/1475-OI_3_1024x1024.png?v=1621483449',
-            'data3':[{
-            'image': 'https://www.gamarra.com.pe/wp-content/uploads/2020/04/WhatsApp-Image-2020-09-03-at-12.04.42-AM-480x633.jpeg',
-            'price':'580'
-            },
-            {
-            'image': 'https://www.gamarra.com.pe/wp-content/uploads/2020/04/WhatsApp-Image-2020-09-03-at-12.04.42-AM-480x633.jpeg',
-            'price':'580'
-            },
-            {
-            'image': 'https://www.gamarra.com.pe/wp-content/uploads/2020/04/WhatsApp-Image-2020-09-03-at-12.04.42-AM-480x633.jpeg',
-            'price':'580'
-            },
-            {
-            'image': 'https://www.gamarra.com.pe/wp-content/uploads/2020/04/WhatsApp-Image-2020-09-03-at-12.04.42-AM-480x633.jpeg',
-            'price':'580'
-            },
-            {
-            'image': 'https://www.gamarra.com.pe/wp-content/uploads/2020/04/WhatsApp-Image-2020-09-03-at-12.04.42-AM-480x633.jpeg',
-            'price':'580'
-            },
-            {
-            'image': 'https://www.gamarra.com.pe/wp-content/uploads/2020/04/WhatsApp-Image-2020-09-03-at-12.04.42-AM-480x633.jpeg',
-            'price':'580'
-            },
-            {
-            'image': 'https://www.gamarra.com.pe/wp-content/uploads/2020/04/WhatsApp-Image-2020-09-03-at-12.04.42-AM-480x633.jpeg',
-            'price':'580'
-            },
-            {
-            'image': 'https://www.gamarra.com.pe/wp-content/uploads/2020/04/WhatsApp-Image-2020-09-03-at-12.04.42-AM-480x633.jpeg',
-            'price':'580'
-            },
-        ]
-      },
-      {
-        'title':'aaaaaaa',
-        'image1': 'https://www.gamarra.com.pe/wp-content/uploads/2020/04/WhatsApp-Image-2020-09-03-at-12.04.42-AM-480x633.jpeg',
-        'image2': 'https://cdn.shopify.com/s/files/1/0393/7701/0733/products/1475-OI_3_1024x1024.png?v=1621483449',
-      }
-      ]
-    },
-    {
-      'title':'aaaaaaa',
-      'image1': 'https://www.gamarra.com.pe/wp-content/uploads/2020/04/WhatsApp-Image-2020-09-03-at-12.04.42-AM-480x633.jpeg',
-      'image2': 'https://cdn.shopify.com/s/files/1/0393/7701/0733/products/1475-OI_3_1024x1024.png?v=1621483449',
-      'dato2':[{
-        'title':'aaaaaaa',
-      'image1': 'https://www.gamarra.com.pe/wp-content/uploads/2020/04/WhatsApp-Image-2020-09-03-at-12.04.42-AM-480x633.jpeg',
-      'image2': 'https://cdn.shopify.com/s/files/1/0393/7701/0733/products/1475-OI_3_1024x1024.png?v=1621483449',
-      },
-      {
-        'title':'aaaaaaa',
-      'image1': 'https://www.gamarra.com.pe/wp-content/uploads/2020/04/WhatsApp-Image-2020-09-03-at-12.04.42-AM-480x633.jpeg',
-      'image2': 'https://cdn.shopify.com/s/files/1/0393/7701/0733/products/1475-OI_3_1024x1024.png?v=1621483449',
-      },
-      {
-        'title':'aaaaaaa',
-      'image1': 'https://www.gamarra.com.pe/wp-content/uploads/2020/04/WhatsApp-Image-2020-09-03-at-12.04.42-AM-480x633.jpeg',
-      'image2': 'https://cdn.shopify.com/s/files/1/0393/7701/0733/products/1475-OI_3_1024x1024.png?v=1621483449',
-      }
-      
-      ]
-    },
-  ];
+  
+  @override
+  void initState() {
+    readJson();
+    // loadData().then((value) => catalogdata=value);
+  }
+
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Categorias'),
+        centerTitle: true,
       ),
+      drawer: const CustomWidgetHome(),
       body: ListView.builder(
-        itemCount: data.length,
+        itemCount: _data.length,
         itemBuilder: (BuildContext context, int index) {  
-          final dato = data[index];
+          final dato = _data[index];
             return CategoryWidge(
               image1: dato['image1'],
               image2: dato['image2'],
               title: dato['title'],
               onTap: (){
-                log('entro');
                 Navigator.push(context, MaterialPageRoute(
-                          builder: (context)=> SubCategory(
-                            data2:dato['dato2']
-                          ),
-                          ),);
+                  builder: (context)=> SubCategory(
+                    data2:dato['dato2']
+                  ),
+                  ),
+                );
               },
-              );
+            );
         },
         )
     );

@@ -33,13 +33,13 @@ class _NavigationScreanState extends State<NavigationScrean> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        backgroundColor: Color.fromARGB(255, 252, 251, 252),
-        unselectedItemColor: Color.fromARGB(255, 15, 15, 15),
-        selectedItemColor: Color.fromARGB(255, 8, 1, 1),
+        backgroundColor:const  Color.fromARGB(255, 252, 251, 252),
+        unselectedItemColor: const Color.fromARGB(255, 15, 15, 15),
+        selectedItemColor:const  Color.fromARGB(255, 8, 1, 1),
         // ignore: prefer_const_literals_to_create_immutables
         items:[
           const BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.house, color: Color.fromARGB(255, 9, 1, 1)), label: 'Inicio'),
-          const BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.carSide, color: Color.fromARGB(255, 8, 0, 0)), label: 'Categoria'),
+          const BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.list, color: Color.fromARGB(255, 8, 0, 0)), label: 'Categoria'),
           
           const BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.heart, color: Color.fromARGB(255, 11, 1, 1)), label: 'favoritos'),
           const BottomNavigationBarItem(icon: FaIcon(FontAwesomeIcons.user, color: Color.fromARGB(255, 10, 0, 0)), label: 'Mi cuenta'),

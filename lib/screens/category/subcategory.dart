@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:sesion_09/screens/index.dart';
 import 'package:sesion_09/widgets/index.dart';
 
-
 class SubCategory extends StatelessWidget {
   final List data2;
   const SubCategory({super.key, required this.data2});
@@ -12,8 +11,6 @@ class SubCategory extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sub category'),
-        centerTitle: true,
       ),
       body: ListView.builder(
         itemCount: data2.length,
@@ -26,13 +23,15 @@ class SubCategory extends StatelessWidget {
               onTap: (){
                 log('entro');
                 Navigator.push(context, MaterialPageRoute(
-                          builder: (context)=> ListCategory(
-                            data: dato['data3'],
-                          ),
-                          ),);
-              },
+                  builder: (context)=> ListCategory(
+                    data: dato['data3'],
+                  ),
+                ),
               );
-        },)
+            },
+          );
+        },
+      )
     );
   }
 }

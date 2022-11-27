@@ -1,7 +1,5 @@
-
-
 import 'package:flutter/material.dart';
-
+import 'package:transparent_image/transparent_image.dart';
 class CardCategory extends StatelessWidget {
   final String? image;
    final String? price;
@@ -18,7 +16,22 @@ class CardCategory extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Image.network(image!, height: 200, width: 250),
+                            SizedBox(width: 250,
+                            child:Stack(
+                                    children: [
+                                      const Center(child: CircularProgressIndicator()),
+                                      Center(
+                                        child: FadeInImage.memoryNetwork(
+                                              placeholder: kTransparentImage,
+                                              image: image!,
+                                              fit: BoxFit.cover,
+                                              height: 145,
+                                              width: 250
+                                            ),
+                                      ),
+                                    ],
+                                  ),
+                            ),
                             Container(
                               color: Colors.purple,
                               height: 30,
