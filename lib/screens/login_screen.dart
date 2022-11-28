@@ -121,7 +121,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey[200],
       body: GestureDetector(
         onTap: () {
           final FocusScopeNode focus = FocusScope.of(context);
@@ -137,6 +137,16 @@ class _LoginScreenState extends State<LoginScreen> {
                 SizedBox(
                   width: 350,
                   child: Image.asset('images/logo.png'),
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                const Text(
+                  'Bienvenidos',
+                  style: TextStyle(
+                    fontSize: 36,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 ChangeNotifierProvider(
                   create: (context) => ProviderLogin(),
@@ -195,7 +205,7 @@ class __LoginFormState extends State<_LoginForm> {
                   hintText: 'correo@shineclothes.com',
                   prefixIcon: const Icon(
                     Icons.email_outlined,
-                    color: Colors.green,
+                    color: Colors.blue,
                   ),
                 ),
                 onChanged: (value) => loginProvider.email = value,
@@ -222,7 +232,7 @@ class __LoginFormState extends State<_LoginForm> {
                   hintText: '********',
                   prefixIcon: const Icon(
                     Icons.key_outlined,
-                    color: Colors.green,
+                    color: Colors.blue,
                   ),
                   suffixIcon: InkWell(
                     onTap: _viewPassword,
@@ -249,7 +259,7 @@ class __LoginFormState extends State<_LoginForm> {
                   ),
                   disabledColor: Colors.green,
                   elevation: 10,
-                  color: Colors.red,
+                  color: Colors.purple,
                   onPressed: loginProvider.isLoading
                       ? null
                       : () async {
@@ -301,7 +311,7 @@ InputDecoration _buildDecoration({
 }) {
   return InputDecoration(
     enabledBorder: OutlineInputBorder(
-      borderSide: const BorderSide(width: 2, color: Colors.green),
+      borderSide: const BorderSide(width: 2, color: Colors.white),
       borderRadius: BorderRadius.circular(15),
     ),
     focusedBorder: OutlineInputBorder(

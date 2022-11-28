@@ -16,7 +16,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey[200],
       body: GestureDetector(
         onTap: () {
           final FocusScopeNode focus = FocusScope.of(context);
@@ -37,10 +37,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   height: 30,
                 ),
                 const Text(
-                  'REGISTRO',
+                  'REGISTRATE',
                   style: TextStyle(
-                    fontSize: 28,
-                    color: Colors.green,
+                    fontSize: 36,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -101,7 +100,7 @@ class __LoginFormState extends State<_LoginForm> {
                   hintText: 'correo@shineclothes.com',
                   prefixIcon: const Icon(
                     Icons.email_outlined,
-                    color: Colors.green,
+                    color: Colors.blue,
                   ),
                 ),
                 onChanged: (value) => loginProvider.email = value,
@@ -128,7 +127,7 @@ class __LoginFormState extends State<_LoginForm> {
                   hintText: '********',
                   prefixIcon: const Icon(
                     Icons.key_outlined,
-                    color: Colors.green,
+                    color: Colors.blue,
                   ),
                   suffixIcon: InkWell(
                     onTap: _viewPassword,
@@ -207,7 +206,7 @@ InputDecoration _buildDecoration({
 }) {
   return InputDecoration(
     enabledBorder: OutlineInputBorder(
-      borderSide: const BorderSide(width: 2, color: Colors.green),
+      borderSide: const BorderSide(width: 2, color: Colors.white),
       borderRadius: BorderRadius.circular(15),
     ),
     focusedBorder: OutlineInputBorder(
