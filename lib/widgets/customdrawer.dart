@@ -78,10 +78,11 @@ class CustomWidgetHome extends StatelessWidget {
             title: const Text('home'),
             minLeadingWidth: 10,
             onTap: () {
-             Navigator.push(context, MaterialPageRoute(
-                  builder: (context)=> const Homescreen(),
-                  )
-              );
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Homescreen(),
+                  ));
             },
           ),
           ListTile(
@@ -89,10 +90,11 @@ class CustomWidgetHome extends StatelessWidget {
             minLeadingWidth: 10,
             title: const Text('Configuracion'),
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(
-                  builder: (context)=> const SettingWidget(),
-                  )
-              );
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const SettingWidget(),
+                  ));
             },
           ),
           const Divider(
@@ -104,33 +106,35 @@ class CustomWidgetHome extends StatelessWidget {
             minLeadingWidth: 10,
             title: const Text('Atención al cliente'),
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(
-                  builder: (context)=> const Atention(),
-                  )
-              );
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Atention(),
+                  ));
             },
           ),
           ListTile(
             leading: const Icon(Icons.help),
             minLeadingWidth: 10,
             title: const Text('Preguntas frecuentes'),
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(
-                  builder: (context)=> const Questions(),
-                  )
-              );
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Questions(),
+                  ));
             },
           ),
-             
           ListTile(
             leading: const Icon(Icons.call),
             minLeadingWidth: 10,
             title: const Text('Contacto'),
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(
-                  builder: (context)=> const Contacto(),
-                  )
-              );
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Contacto(),
+                  ));
             },
           ),
           ListTile(
@@ -138,10 +142,11 @@ class CustomWidgetHome extends StatelessWidget {
             minLeadingWidth: 10,
             title: const Text('Compra segura'),
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(
-                  builder: (context)=> const BuySecurity(),
-                  )
-              );
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const BuySecurity(),
+                  ));
             },
           ),
           ListTile(
@@ -152,10 +157,11 @@ class CustomWidgetHome extends StatelessWidget {
             minLeadingWidth: 10,
             title: const Text('Cesta'),
             onTap: () {
-             Navigator.push(context, MaterialPageRoute(
-                  builder: (context)=> const CestaScreen(),
-                  )
-              );
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const CestaScreen(),
+                  ));
             },
           ),
           ListTile(
@@ -163,10 +169,11 @@ class CustomWidgetHome extends StatelessWidget {
             minLeadingWidth: 10,
             title: const Text('Acerca de Shine Clothes'),
             onTap: () {
-              Navigator.push(context, MaterialPageRoute(
-                  builder: (context)=> const Info(),
-                  )
-              );
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Info(),
+                  ));
             },
           ),
           const Divider(
@@ -178,15 +185,14 @@ class CustomWidgetHome extends StatelessWidget {
             minLeadingWidth: 10,
             title: const Text('Cerrar sesion'),
             onTap: () {
-              Navigator.of(context, rootNavigator: true)
-                              .pushAndRemoveUntil(
-                            MaterialPageRoute(
-                              builder: (BuildContext context) {
-                                return const LoginScreen();
-                              },
-                            ),
-                            (_) => false,
-                          );
+              Navigator.of(context, rootNavigator: true).pushAndRemoveUntil(
+                MaterialPageRoute(
+                  builder: (BuildContext context) {
+                    return const LoginScreen();
+                  },
+                ),
+                (route) => false,
+              );
             },
           ),
         ],

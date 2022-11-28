@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sesion_09/providers/provider_login.dart';
+import 'package:sesion_09/services/index.dart';
 import 'package:sesion_09/services/service_auth.dart';
 import 'package:sesion_09/route/route.dart';
 
@@ -15,7 +16,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       body: GestureDetector(
         onTap: () {
           final FocusScopeNode focus = FocusScope.of(context);
@@ -32,11 +33,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   width: 300,
                   child: Image.asset('images/logo.png'),
                 ),
+                const SizedBox(
+                  height: 30,
+                ),
                 const Text(
                   'REGISTRO',
                   style: TextStyle(
                     fontSize: 28,
-                    color: Colors.white,
+                    color: Colors.green,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -50,7 +54,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   },
                   child: const Text(
                     'Iniciar Sesión',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.blue),
                   ),
                 )
               ],
@@ -81,17 +85,20 @@ class __LoginFormState extends State<_LoginForm> {
     final loginProvider = Provider.of<ProviderLogin>(context);
     return SizedBox(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Form(
           key: loginProvider.formkey,
           child: Column(
             children: [
+              const SizedBox(
+                height: 30,
+              ),
               TextFormField(
                 style: const TextStyle(color: Colors.black),
                 autocorrect: false,
                 keyboardType: TextInputType.emailAddress,
                 decoration: _buildDecoration(
-                  hintText: 'dev@flutter.com',
+                  hintText: 'correo@shineclothes.com',
                   prefixIcon: const Icon(
                     Icons.email_outlined,
                     color: Colors.green,
@@ -147,8 +154,8 @@ class __LoginFormState extends State<_LoginForm> {
                     borderRadius: BorderRadius.circular(15),
                   ),
                   disabledColor: Colors.green,
-                  elevation: 1,
-                  color: Colors.green,
+                  elevation: 10,
+                  color: Colors.red,
                   onPressed: loginProvider.isLoading
                       ? null
                       : () async {
@@ -166,6 +173,8 @@ class __LoginFormState extends State<_LoginForm> {
                                   loginProvider.email, loginProvider.password);
 
                           if (errorMessage == null) {
+                            CustomSnackbbar.verSnackbar(
+                                'Gracias por registrarte');
                             // ignore: use_build_context_synchronously
                             Navigator.pushReplacementNamed(
                                 context, MyRoutes.rHome);
@@ -175,7 +184,7 @@ class __LoginFormState extends State<_LoginForm> {
                         },
                   child: (loginProvider.isLoading)
                       ? const CircularProgressIndicator(
-                          color: Colors.white,
+                          color: Colors.blue,
                         )
                       : const Text(
                           'REGISTRAR',

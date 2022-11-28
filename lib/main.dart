@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:sesion_09/services/service_auth.dart';
 import 'package:provider/provider.dart';
 import 'package:sesion_09/preferences/preference.dart';
 import 'package:sesion_09/providers/theme_provider.dart';
 import 'package:sesion_09/route/route.dart';
 
+import 'package:sesion_09/services/index.dart';
 import 'package:sesion_09/providers/provider_login.dart';
-import 'package:sesion_09/providers/theme_provider.dart';
+import 'package:sesion_09/services/snapbar.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Shine Clothes',
+      scaffoldMessengerKey: CustomSnackbbar.msgkey,
       theme: Provider.of<ProviderTheme>(context).currentTheme,
       onGenerateRoute: MyRoutes.generateRoute,
       initialRoute: MyRoutes.rLogin,
