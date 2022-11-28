@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sesion_09/route/route.dart';
+import 'package:sesion_09/screens/index.dart';
 
 import '../widgets/index.dart';
 
@@ -57,7 +58,7 @@ class CestaScreen extends StatelessWidget {
           ),
         ),
       ),
-      floatingActionButton: Container(
+      floatingActionButton: SizedBox(
         width: 100,
         height: 70,
         child: FloatingActionButton(
@@ -69,7 +70,10 @@ class CestaScreen extends StatelessWidget {
             style: TextStyle(color: Colors.white),
           ),
           onPressed: () {
-            Navigator.pushReplacementNamed(context, MyRoutes.rPay);
+            Navigator.push(context, MaterialPageRoute(
+                  builder: (context)=> const PayProfile(),
+                  )
+            );
           },
         ),
       ),
