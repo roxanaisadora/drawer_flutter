@@ -88,7 +88,7 @@ class Homescreen extends StatelessWidget {
               child: Stack(
                 children: [
                   ClipRRect(
-                    child: Image.asset("assets/banner8.png"),
+                    child: Image.asset("assets/banner1.3.png"),
 
                     // borderRadius: BorderRadius.circular(10),
                   ),
@@ -118,9 +118,9 @@ class Homescreen extends StatelessWidget {
 
               // borderRadius: BorderRadius.circular(10),
             ),
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             ClipRRect(
-              child: Image.asset("assets/banner1.3.png"),
+              child: Image.asset("assets/banner8.png"),
 
               // borderRadius: BorderRadius.circular(10),
             ),
@@ -170,7 +170,7 @@ class Homescreen extends StatelessWidget {
               child: RichText(
                 textAlign: TextAlign.start,
                 text: const TextSpan(
-                    text: "Ofertas especiales",
+                    text: "¡Ofertas impedibles!",
                     style: TextStyle(
 
                         color: Color.fromARGB(255, 231, 128, 49),
@@ -229,7 +229,7 @@ class Homescreen extends StatelessWidget {
                                 // ),
 
                                 Container(
-                                  color: Color.fromARGB(255, 244, 100, 148),
+                                  color: Color.fromARGB(255, 202, 236, 118),
                                   child: Row(
                                     children: [
                                       Padding(
@@ -239,9 +239,7 @@ class Homescreen extends StatelessWidget {
                                           text: TextSpan(
                                               text: "\$ ${e.price}",
                                               style: const TextStyle(
-                                                  color: Color.fromARGB(
-                                                      255, 253, 249, 249),
-                                                  fontSize: 15,
+                                                  color: Color.fromARGB(255, 11, 10, 10),
                                                   fontWeight: FontWeight.bold)),
                                         ),
                                       ),
