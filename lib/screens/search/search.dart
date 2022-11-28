@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:sesion_09/widgets/index.dart';
 
 class Building {
   String? id;
@@ -19,7 +20,7 @@ class SearchList extends StatefulWidget {
 
 class _SearchListState extends State<SearchList> {
   Widget appBarTitle = Text(
-    "My Properties",
+    "Search...",
     style: TextStyle(color: Colors.white),
   );
   Icon actionIcon = Icon(
@@ -119,8 +120,11 @@ class _SearchListState extends State<SearchList> {
             itemBuilder: (context, index) {
               return Uiitem(_searchList[index]);
             },
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
+              mainAxisExtent: 256,
+              childAspectRatio: MediaQuery.of(context).size.width /
+                (MediaQuery.of(context).size.height/1.5),
             )
             ));
   }
@@ -179,47 +183,10 @@ class Uiitem extends StatelessWidget {
   const Uiitem(this.building, {super.key});
 
   Widget build(BuildContext context) {
-    return Card(
-      margin: const EdgeInsets.fromLTRB(5, 5, 5, 7),
-      elevation: 10.0,
-      child: InkWell(
-        splashColor: Colors.orange,
-        onTap: () {
-          print(building.id);
-        },
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Container(
-              height: 100,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                image: DecorationImage(image: NetworkImage(building.image!),
-                fit: BoxFit.cover)
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(10.0, 15.0, 0.0, 0.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text(
-                    building.name!,
-                    style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 14.0),
-                    maxLines: 1,
-                  ),
-                  const SizedBox(height: 0.0),
-                  Text(
-                    building.place!,
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
+    return CardSearch(
+                  image: building.image!,
+                  price: building.place!,
+                  title: building.name!
+              );
   }
 }
