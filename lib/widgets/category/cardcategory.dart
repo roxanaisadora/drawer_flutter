@@ -33,7 +33,7 @@ class CardCategory extends StatelessWidget {
                                   ),
                             ),
                             Container(
-                              color: Colors.purple,
+                              color: const Color.fromARGB(255, 244, 100, 148),
                               height: 30,
                               child: Row(
                                 children: [

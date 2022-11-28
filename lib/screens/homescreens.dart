@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:sesion_09/pages/slider.dart';
 import 'package:sesion_09/route/route.dart';
+import 'package:sesion_09/screens/index.dart';
 
 import 'package:sesion_09/widgets/index.dart';
 import 'package:sesion_09/preferences/preference.dart';
@@ -52,29 +53,37 @@ class Homescreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: (Preferences.genero != 1)
-            ? Color.fromARGB(95, 214, 145, 218)
-            : Color.fromARGB(255, 251, 249, 250),
-        title: const Text(
-          'Shine Clothes',
-          style: TextStyle(
-              color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold),
-        ),
-        centerTitle: true,
-        actions: <Widget>[
-          IconButton(
-            icon: const Icon(Icons.notifications_none),
-            onPressed: () {},
+        appBar: AppBar(
+          backgroundColor: (Preferences.genero != 1)
+              ? Color.fromARGB(95, 214, 145, 218)
+              : Color.fromARGB(255, 251, 249, 250),
+          title: const Text(
+            'Shine Clothes',
+            style: TextStyle(
+                color: Colors.black, fontSize: 30, fontWeight: FontWeight.bold),
           ),
-          IconButton(
-            icon: const Icon(Icons.shopping_cart_outlined),
-            onPressed: () {},
-          )
-        ],
-        elevation: 0,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
-      ),
+          centerTitle: true,
+          actions: <Widget>[
+            IconButton(
+              icon: const Icon(Icons.search),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: const Icon(
+                Icons.shopping_cart_outlined,
+                color: Color(0xFF5624d0),
+              ),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                          builder: (context)=> const CestaScreen(),
+                          ),);
+              },
+            )
+          ],
+          elevation: 0,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
+        ),
+        
       drawer: const CustomWidgetHome(),
       body: Container(
         // decoration: const BoxDecoration(
@@ -118,19 +127,19 @@ class Homescreen extends StatelessWidget {
 
               // borderRadius: BorderRadius.circular(10),
             ),
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             ClipRRect(
               child: Image.asset("assets/banner1.3.png"),
 
               // borderRadius: BorderRadius.circular(10),
             ),
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             ClipRRect(
               child: Image.asset("assets/banner1.4.png"),
 
               // borderRadius: BorderRadius.circular(10),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             //  SizedBox(
             //   height: 100,
             //   child: ListView(
@@ -203,19 +212,17 @@ class Homescreen extends StatelessWidget {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Image.asset(e.image, height: 200, width: 250),
-
-                                RichText(textAlign: TextAlign.center,
-                                text: TextSpan(text: e.title,
-                                style: const TextStyle(
+                                Banner (
+                                  message: 'Offerta 20%',
+                                  location: BannerLocation.topStart,
                                   color: Colors.red,
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.bold
-                                )
-
+                                child: SizedBox(
+                                   height: 200, 
+                                   width: 280,
+                                  child: Image.asset(e.image,fit:BoxFit.fill,height: 200,))
                                 ),
 
-                                ),
+                               
                                 //  const SizedBox(height: 2,),
                                 // RichText(textAlign: TextAlign.start,
                                 // text: TextSpan(text: e.type,
@@ -229,7 +236,7 @@ class Homescreen extends StatelessWidget {
                                 // ),
 
                                 Container(
-                                  color: Color.fromARGB(255, 244, 100, 148),
+                                  color: const Color.fromARGB(255, 244, 100, 148),
                                   child: Row(
                                     children: [
                                       Padding(
