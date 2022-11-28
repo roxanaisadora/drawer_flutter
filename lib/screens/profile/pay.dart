@@ -9,32 +9,32 @@ class PayProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text ('Mi dirección fiscal'),
+        title: const Text ('Mis metodos de pago'),
         centerTitle: true,
       ),
       body: Column(
         children: [
           Padding(
-                  padding: const EdgeInsets.only(right: 20, left: 20),
-                  child: InkWell(
-                    onTap: () => _onAlertWithCustomContentPressed(context),
-                    child: SizedBox(
-                            width: double.infinity,
-                            height: 60,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Row(children: const[
-                                Icon(Icons.location_city),
-                                SizedBox(width: 20,),
-                                Text('Agregar nueva dirección fiscal', style: TextStyle(fontSize: 16),),
-                                ],),
-                                const Icon(Icons.keyboard_arrow_right, size: 35,),
-                              ],
-                            ),
-                          ),
-                  ),
-                ),
+                      padding: const EdgeInsets.only(right: 20, left: 20),
+                      child: InkWell(
+                        onTap: () => _onAlertWithCustomContentPressed(context),
+                        child: SizedBox(
+                                width: double.infinity,
+                                height: 60,
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Row(children: const[
+                                    Icon(Icons.card_membership),
+                                    SizedBox(width: 20,),
+                                    Text('Agregar nueva tarjeta', style: TextStyle(fontSize: 16),),
+                                    ],),
+                                    const Icon(Icons.keyboard_arrow_right, size: 35,),
+                                  ],
+                                ),
+                              ),
+                      ),
+                    ),
         ],
       ),
     );

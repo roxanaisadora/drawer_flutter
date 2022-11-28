@@ -47,15 +47,11 @@ _onAlertWithCustomContentPressed(context) {
         content: Column(
           children: const <Widget>[
             TextField(
-              keyboardType: TextInputType.number,
-              obscureText: true,
               decoration: InputDecoration(
                 labelText: 'Pais',
               ),
             ),
             TextField(
-              keyboardType: TextInputType.number,
-              obscureText: true,
               decoration: InputDecoration(
                 labelText: 'Region',
               ),
@@ -66,12 +62,6 @@ _onAlertWithCustomContentPressed(context) {
               ),
             ),
             TextField(
-              decoration: InputDecoration(
-                labelText: 'Ruc',
-              ),
-            ),
-            TextField(
-              obscureText: true,
               decoration: InputDecoration(
                 labelText: 'Dirección',
               ),
