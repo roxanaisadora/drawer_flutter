@@ -14,7 +14,7 @@ class MyPerfilScreen extends StatelessWidget {
         backgroundColor: (Preferences.genero != 1)
                         ? Colors.redAccent
                         : Colors.blue,
-        title: const Text('Profile'),
+        title: const Text('Mi Perfil'),
         centerTitle: true,
       ),
       drawer: const CustomWidgetHome(),

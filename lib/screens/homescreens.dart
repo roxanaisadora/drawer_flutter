@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:sesion_09/pages/slider.dart';
 import 'package:sesion_09/route/route.dart';
+import 'package:sesion_09/screens/index.dart';
 
 import 'package:sesion_09/widgets/index.dart';
 import 'package:sesion_09/preferences/preference.dart';
@@ -64,7 +65,7 @@ class Homescreen extends StatelessWidget {
           centerTitle: true,
           actions: <Widget>[
             IconButton(
-              icon: const Icon(Icons.notifications_none),
+              icon: const Icon(Icons.search),
               onPressed: () {},
             ),
             IconButton(
@@ -73,7 +74,9 @@ class Homescreen extends StatelessWidget {
                 color: Color(0xFF5624d0),
               ),
               onPressed: () {
-                Navigator.pushReplacementNamed(context, MyRoutes.rCesta);
+                Navigator.push(context, MaterialPageRoute(
+                          builder: (context)=> const CestaScreen(),
+                          ),);
               },
             )
           ],
