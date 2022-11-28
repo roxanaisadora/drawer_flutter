@@ -66,7 +66,11 @@ class Homescreen extends StatelessWidget {
           actions: <Widget>[
             IconButton(
               icon: const Icon(Icons.search),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(
+                          builder: (context)=> SearchList(),
+                          ),);
+              },
             ),
             IconButton(
               icon: const Icon(

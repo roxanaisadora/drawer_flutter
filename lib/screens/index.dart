@@ -15,6 +15,7 @@ export 'package:sesion_09/screens/profile/fiscal.dart';
 export 'package:sesion_09/screens/category/category.dart';
 export 'package:sesion_09/screens/category/subcategory.dart';
 export 'package:sesion_09/screens/category/listCategory.dart';
+export 'package:sesion_09/screens/search/search.dart';
 
 export 'package:sesion_09/screens/register_screen.dart';
 export 'package:sesion_09/screens/verify_auth_screen.dart';
