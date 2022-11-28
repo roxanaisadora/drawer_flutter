@@ -1,123 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sesion_09/providers/provider_login.dart';
-import 'package:sesion_09/route/route.dart';
 import 'package:sesion_09/services/index.dart';
 import 'package:sesion_09/services/service_auth.dart';
+import 'package:sesion_09/route/route.dart';
 
-//class LoginScreen extends StatelessWidget {
-// class LoginScreen extends StatelessWidget {
-//   const LoginScreen({super.key});
-//   @override
-//   Void initState() {
-//     _password Visible = false;
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return SafeArea(
-//       child: Scaffold(
-//         body: Center(
-//           child: Column(
-//             mainAxisAlignment: MainAxisAlignment.center,
-//             children: [
-//               Flexible(
-//                 child: Image.asset(
-//                   'images/logo.png',
-//                   height: 300.0,
-//                 ),
-//               ),
-//               const SizedBox(
-//                 height: 15.0,
-//               ),
-//               _userTextField(),
-//               const SizedBox(
-//                 height: 15,
-//               ),
-//               _passwordTextField(),
-//               const SizedBox(
-//                 height: 20.0,
-//               ),
-//               _bottonLogin(),
-//               const SizedBox(
-//                 height: 20.0,
-//               ),
-//               GestureDetector(
-//                 onTap: () {
-//                   Navigator.pushNamed(context, '/Home');
-//                 },
-//                 child: const Text(
-//                   'Ver la  tienda sin logearse',
-//                   style: TextStyle(
-//                       color: Colors.blue, fontWeight: FontWeight.bold),
-//                 ),
-//               ),
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-
-//   Widget _userTextField() {
-//     return StreamBuilder(
-//         builder: (BuildContext context, AsyncSnapshot snapshot) {
-//       return Container(
-//         padding: const EdgeInsets.symmetric(horizontal: 20.0),
-//         child: TextField(
-//           keyboardType: TextInputType.emailAddress,
-//           decoration: const InputDecoration(
-//             icon: Icon(Icons.email),
-//             hintText: 'ejemplo@correo.com',
-//             labelText: 'Correo electrónico',
-//           ),
-//           onChanged: (value) {},
-//         ),
-//       );
-//     });
-//   }
-
-//   Widget _passwordTextField() {
-//     return StreamBuilder(
-//         builder: (BuildContext context, AsyncSnapshot snapshot) {
-//       return Container(
-//         padding: const EdgeInsets.symmetric(horizontal: 20.0),
-//         child: TextField(
-//           keyboardType: TextInputType.emailAddress,
-//           obscureText: true,
-//           decoration: const InputDecoration(
-//             icon: Icon(Icons.lock),
-//             hintText: 'Contraseña',
-//             labelText: 'Contraseña',
-//           ),
-//           onChanged: (value) {},
-//         ),
-//       );
-//     });
-//   }
-
-//   Widget _bottonLogin() {
-//     return StreamBuilder(
-//         builder: (BuildContext context, AsyncSnapshot snapshot) {
-//       return ElevatedButton(
-//         onPressed: () {},
-//         child: Container(
-//           padding: const EdgeInsets.symmetric(horizontal: 80.0, vertical: 15.0),
-//           child: const Text('Iniciar Sesion'),
-//         ),
-//       );
-//     });
-//   }
-// }
-
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class RegisterScreen extends StatefulWidget {
+  const RegisterScreen({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<RegisterScreen> createState() => _RegisterScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -135,14 +30,14 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
-                  width: 350,
+                  width: 300,
                   child: Image.asset('images/logo.png'),
                 ),
                 const SizedBox(
                   height: 30,
                 ),
                 const Text(
-                  'Bienvenidos',
+                  'REGISTRATE',
                   style: TextStyle(
                     fontSize: 36,
                     fontWeight: FontWeight.bold,
@@ -154,10 +49,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 TextButton(
                   onPressed: () {
-                    Navigator.pushReplacementNamed(context, MyRoutes.rRegister);
+                    Navigator.pushReplacementNamed(context, MyRoutes.rLogin);
                   },
                   child: const Text(
-                    'Crear nueva cuenta',
+                    'Iniciar Sesión',
                     style: TextStyle(color: Colors.blue),
                   ),
                 )
@@ -259,7 +154,7 @@ class __LoginFormState extends State<_LoginForm> {
                   ),
                   disabledColor: Colors.green,
                   elevation: 10,
-                  color: Colors.purple,
+                  color: Colors.red,
                   onPressed: loginProvider.isLoading
                       ? null
                       : () async {
@@ -272,17 +167,17 @@ class __LoginFormState extends State<_LoginForm> {
 
                           loginProvider.isLoading = true;
 
-                          final String? errorMessage = await authService.login(
-                              loginProvider.email, loginProvider.password);
+                          final String? errorMessage =
+                              await authService.createUser(
+                                  loginProvider.email, loginProvider.password);
 
                           if (errorMessage == null) {
-                            CustomSnackbbar.verSnackbar('Bienvenido');
+                            CustomSnackbbar.verSnackbar(
+                                'Gracias por registrarte');
                             // ignore: use_build_context_synchronously
                             Navigator.pushReplacementNamed(
                                 context, MyRoutes.rHome);
                           } else {
-                            CustomSnackbbar.verSnackbar(
-                                'Correo y/o contraseña invalidos');
                             loginProvider.isLoading = false;
                           }
                         },
@@ -291,7 +186,7 @@ class __LoginFormState extends State<_LoginForm> {
                           color: Colors.blue,
                         )
                       : const Text(
-                          'INGRESAR',
+                          'REGISTRAR',
                           style: TextStyle(color: Colors.white),
                         ),
                 ),

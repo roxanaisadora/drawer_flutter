@@ -46,6 +46,7 @@ dependencies:
   quickalert: ^1.0.0
   transparent_image: ^2.0.0
   persistent_bottom_nav_bar: ^5.0.2
+  flutter_secure_storage: ^6.1.0
 
  
       
