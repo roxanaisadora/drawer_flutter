@@ -5,12 +5,15 @@ import 'package:sesion_09/widgets/index.dart';
 
 class SubCategory extends StatelessWidget {
   final List data2;
-  const SubCategory({super.key, required this.data2});
+  final String titleappbar;
+  const SubCategory({super.key, required this.data2, required this.titleappbar});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text(titleappbar),
+        centerTitle: true,
       ),
       body: ListView.builder(
         itemCount: data2.length,
@@ -25,6 +28,7 @@ class SubCategory extends StatelessWidget {
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context)=> ListCategory(
                     data: dato['data3'],
+                    titleappbar:titleappbar
                   ),
                 ),
               );

@@ -27,7 +27,7 @@ class CategoryWidge extends StatelessWidget {
                           children: [
                             Expanded(child: SizedBox( height: 145,
                             child: Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: const EdgeInsets.only(left: 15),
                               child: Center(child: Text(title!, style: const TextStyle(color: Colors.black, fontSize: 20,fontWeight: FontWeight.bold),textAlign: TextAlign.center)),
                             ),
                             )),

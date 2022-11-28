@@ -49,7 +49,8 @@ class _CategoryState extends State<Category> {
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context)=> SubCategory(
-                    data2:dato['dato2']
+                    data2:dato['dato2'],
+                    titleappbar:dato['title']
                   ),
                   ),
                 );
