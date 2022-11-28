@@ -4,12 +4,16 @@ import 'package:sesion_09/widgets/index.dart';
 
 class ListCategory extends StatelessWidget {
   final List data;
-  const ListCategory({super.key, required this.data});
+  final String titleappbar;
+  const ListCategory({super.key, required this.data, required this.titleappbar});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text(titleappbar),
+        centerTitle: true,
+      ),
       body:Container(
         decoration: const BoxDecoration(
                         image: DecorationImage(image: AssetImage('assets/fondocategory.jpg'),
