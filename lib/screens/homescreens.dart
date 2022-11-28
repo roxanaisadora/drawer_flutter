@@ -66,8 +66,13 @@ class Homescreen extends StatelessWidget {
               onPressed: () {},
             ),
             IconButton(
-              icon: const Icon(Icons.shopping_cart_outlined),
-              onPressed: () {},
+              icon: const Icon(
+                Icons.shopping_cart_outlined,
+                color: Color(0xFF5624d0),
+              ),
+              onPressed: () {
+                Navigator.pushReplacementNamed(context, MyRoutes.rCesta);
+              },
             )
           ],
           elevation: 0,
