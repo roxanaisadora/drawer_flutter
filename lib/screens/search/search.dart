@@ -74,6 +74,21 @@ class _SearchListState extends State<SearchList> {
     _list.add(
       Building(id:"1", name: "colo1", place: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18855858_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
+    _list.add(
+      Building(id:"1", name: "polo", place: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18855858_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+    );
+    _list.add(
+      Building(id:"1", name: "polo1", place: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18634892_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+    );
+    _list.add(
+      Building(id:"1", name: "volo2", place: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18986720_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+    );
+    _list.add(
+      Building(id:"1", name: "kolo1", place: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882450723_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+    );
+    _list.add(
+      Building(id:"1", name: "colo1", place: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18855858_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+    );
     _searchList = _list;
     log('$_searchList');
   }
