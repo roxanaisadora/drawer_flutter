@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sesion_09/route/route.dart';
 import 'package:sesion_09/preferences/preference.dart';
+
+import '../screens/index.dart';
 
 class CustomWidgetHome extends StatelessWidget {
   const CustomWidgetHome({
@@ -77,7 +78,11 @@ class CustomWidgetHome extends StatelessWidget {
             title: const Text('home'),
             minLeadingWidth: 10,
             onTap: () {
-              Navigator.pushReplacementNamed(context, MyRoutes.rHome);
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Homescreen(),
+                  ));
             },
           ),
           ListTile(
@@ -85,7 +90,11 @@ class CustomWidgetHome extends StatelessWidget {
             minLeadingWidth: 10,
             title: const Text('Configuracion'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, MyRoutes.rAjuste);
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const SettingWidget(),
+                  ));
             },
           ),
           const Divider(
@@ -97,7 +106,11 @@ class CustomWidgetHome extends StatelessWidget {
             minLeadingWidth: 10,
             title: const Text('Atención al cliente'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, MyRoutes.rAtention);
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Atention(),
+                  ));
             },
           ),
           ListTile(
@@ -105,7 +118,11 @@ class CustomWidgetHome extends StatelessWidget {
             minLeadingWidth: 10,
             title: const Text('Preguntas frecuentes'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, MyRoutes.rQuestion);
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Questions(),
+                  ));
             },
           ),
           ListTile(
@@ -113,7 +130,11 @@ class CustomWidgetHome extends StatelessWidget {
             minLeadingWidth: 10,
             title: const Text('Contacto'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, MyRoutes.rContacto);
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Contacto(),
+                  ));
             },
           ),
           ListTile(
@@ -121,7 +142,11 @@ class CustomWidgetHome extends StatelessWidget {
             minLeadingWidth: 10,
             title: const Text('Compra segura'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, MyRoutes.rCompraSegura);
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const BuySecurity(),
+                  ));
             },
           ),
           ListTile(
@@ -132,7 +157,11 @@ class CustomWidgetHome extends StatelessWidget {
             minLeadingWidth: 10,
             title: const Text('Cesta'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, MyRoutes.rCesta);
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const CestaScreen(),
+                  ));
             },
           ),
           ListTile(
@@ -140,7 +169,11 @@ class CustomWidgetHome extends StatelessWidget {
             minLeadingWidth: 10,
             title: const Text('Acerca de Shine Clothes'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, MyRoutes.rInfo);
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Info(),
+                  ));
             },
           ),
           const Divider(
@@ -152,7 +185,14 @@ class CustomWidgetHome extends StatelessWidget {
             minLeadingWidth: 10,
             title: const Text('Cerrar sesion'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, MyRoutes.rLogin);
+              Navigator.of(context, rootNavigator: true).pushAndRemoveUntil(
+                MaterialPageRoute(
+                  builder: (BuildContext context) {
+                    return const LoginScreen();
+                  },
+                ),
+                (route) => false,
+              );
             },
           ),
         ],

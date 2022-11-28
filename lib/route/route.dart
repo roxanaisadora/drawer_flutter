@@ -14,6 +14,8 @@ class MyRoutes {
   static const String rFavoritePage = '/FavoritePage';
   static const String rCesta = '/Cesta';
   static const String rPay = '/Pay';
+  static const String rRegister = '/register';
+  static const String rVerifyT = '/verify';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -37,6 +39,11 @@ class MyRoutes {
         return MaterialPageRoute(builder: (_) => const CestaScreen());
       case ('/Pay'):
         return MaterialPageRoute(builder: (_) => const PayProfile());
+      case ('/register'):
+        return MaterialPageRoute(builder: (_) => const RegisterScreen());
+      case ('/verify'):
+        return MaterialPageRoute(builder: (_) => const VerifyAuthScreen());
+
       default:
         return MaterialPageRoute(builder: (_) => const NavigationScrean());
     }
