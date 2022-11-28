@@ -44,13 +44,10 @@ dependencies:
   carousel_slider: ^4.1.1
   rflutter_alert: ^2.0.4
   quickalert: ^1.0.0
+  transparent_image: ^2.0.0
 
  
- 
-  
- 
-  
-
+      
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -77,6 +74,7 @@ flutter:
   assets:
   - images/
   - assets/
+  - assets/datacategory.json
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
