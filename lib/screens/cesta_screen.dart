@@ -21,38 +21,38 @@ class CestaScreen extends StatelessWidget {
             children: const [
               CustomCesta(
                 img:
-                    'https://cdn.pixabay.com/photo/2017/05/13/12/40/fashion-2309519_960_720.jpg',
+                    'https://falabella.scene7.com/is/image/FalabellaPE/18708842_2?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70',
                 cant_producto: '1',
-                name_producto: 'Sombrero',
-                precio: '155',
+                name_producto: 'Polo mujer',
+                precio: '60',
               ),
               CustomCesta(
                 img:
-                    'https://cdn.pixabay.com/photo/2016/04/16/19/51/girl-1333640_960_720.jpg',
+                    'https://falabella.scene7.com/is/image/FalabellaPE/18986720_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70',
                 cant_producto: '1',
-                name_producto: 'Falda',
-                precio: '155',
+                name_producto: 'Cargigan Mujer',
+                precio: '30',
               ),
               CustomCesta(
                 img:
-                    'https://cdn.pixabay.com/photo/2016/01/21/20/24/girl-1154734_960_720.jpg',
+                    'https://falabella.scene7.com/is/image/FalabellaPE/882475587_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70',
                 cant_producto: '1',
-                name_producto: 'Bikini',
-                precio: '155',
+                name_producto: 'Joguer Hombre',
+                precio: '55',
               ),
               CustomCesta(
                 img:
-                    'https://cdn.pixabay.com/photo/2014/11/19/19/31/feet-538245_960_720.jpg',
+                    'https://falabella.scene7.com/is/image/FalabellaPE/19315069_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70',
                 cant_producto: '1',
-                name_producto: 'Sandalias',
-                precio: '155',
+                name_producto: 'Jean Mujer',
+                precio: '70',
               ),
               CustomCesta(
                 img:
-                    'https://cdn.pixabay.com/photo/2016/11/23/18/12/bag-1854148_960_720.jpg',
+                    'https://falabella.scene7.com/is/image/FalabellaPE/882359721_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70',
                 cant_producto: '1',
-                name_producto: 'Bolso',
-                precio: '155',
+                name_producto: 'Chompa marino hombre',
+                precio: '60',
               ),
             ],
           ),

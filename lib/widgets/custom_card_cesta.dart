@@ -40,7 +40,10 @@ class CustomCesta extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(name_producto),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 15),
+                    child: Text(name_producto),
+                  ),
                   Row(
                     children: [
                       const Text(

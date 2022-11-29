@@ -12,3 +12,4 @@ export 'package:sesion_09/widgets/profile/cardprofile.dart';
 export 'package:sesion_09/widgets/category/categorycard.dart';
 export 'package:sesion_09/widgets/category/cardcategory.dart';
 export 'package:sesion_09/widgets/searchwidget/serchcard.dart';
+export 'package:sesion_09/widgets/favoritos/cardfavorito.dart';

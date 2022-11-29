@@ -54,14 +54,14 @@ class _FavouritePageState extends State<FavouritePage> {
             itemCount: _data.length,
             itemBuilder: (BuildContext context, int index) {
               final dato = _data[index];
-              return CardCategory(
+              return CardFavorito(
                   image: dato['image'],
                   price: dato['price'],
                   favorite:(){
                     QuickAlert.show(
                       context: context,
-                      type: QuickAlertType.success,
-                      text: 'Se ha agregado a lista de deseo',
+                      type: QuickAlertType.warning,
+                      text: 'Se ha quitado a lista de deseo',
                       );
                   },
                   buy:(){
