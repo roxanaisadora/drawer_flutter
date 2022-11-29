@@ -15,7 +15,7 @@ class CustomWidgetHome extends StatelessWidget {
         children: <Widget>[
           DrawerHeader(
             decoration: BoxDecoration(
-              color: (Preferences.genero != 1) ? Colors.redAccent : Colors.blue,
+              color: (Preferences.genero != 1) ? Colors.redAccent : Color.fromARGB(255, 252, 85, 233),
             ),
             child: Stack(
               children: <Widget>[
