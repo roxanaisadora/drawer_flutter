@@ -60,55 +60,55 @@ class _SearchListState extends State<SearchList> {
   void init() {
     _list = [];
     _list.add(
-      Building(id:"1", name: "Chompa marino hombre", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882359721_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"1", name: "Chompa marino hombre", price: "60",image:"https://falabella.scene7.com/is/image/FalabellaPE/882359721_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"2", name: "Joguer plomo hombre", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882475587_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"2", name: "Joguer plomo hombre", price: "70",image:"https://falabella.scene7.com/is/image/FalabellaPE/882475587_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"3", name: "Jean mom mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/19315069_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"3", name: "Jean mom mujer", price: "50",image:"https://falabella.scene7.com/is/image/FalabellaPE/19315069_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"4", name: "Chaleco Yoniste hombre", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/19113853_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"4", name: "Chaleco Yoniste hombre", price: "45",image:"https://falabella.scene7.com/is/image/FalabellaPE/19113853_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"5", name: "Cardigan Basement mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18986720_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"5", name: "Cardigan Basement mujer", price: "70",image:"https://falabella.scene7.com/is/image/FalabellaPE/18986720_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"6", name: "Polera Gap mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18855858_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"6", name: "Polera Gap mujer", price: "48",image:"https://falabella.scene7.com/is/image/FalabellaPE/18855858_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"7", name: "Pantalon Mango mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882454805_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"7", name: "Pantalon Mango mujer", price: "65",image:"https://falabella.scene7.com/is/image/FalabellaPE/882454805_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"8", name: "Pantalon Mossimo mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882546300_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"8", name: "Pantalon Mossimo mujer", price: "45",image:"https://falabella.scene7.com/is/image/FalabellaPE/882546300_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"9", name: "Sweater Germanota mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882450723_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"9", name: "Sweater Germanota mujer", price: "36",image:"https://falabella.scene7.com/is/image/FalabellaPE/882450723_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"17", name: "Sweater Volcom hombre", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/19056537_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"17", name: "Sweater Volcom hombre", price: "63",image:"https://falabella.scene7.com/is/image/FalabellaPE/19056537_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"10", name: "Chompa De Yong mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/19176245_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"10", name: "Chompa De Yong mujer", price: "49",image:"https://falabella.scene7.com/is/image/FalabellaPE/19176245_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"11", name: "Chaleco Cardin hombre", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/19254452_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"11", name: "Chaleco Cardin hombre", price: "52",image:"https://falabella.scene7.com/is/image/FalabellaPE/19254452_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"12", name: "Casaca New York hombre", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18854117_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"12", name: "Casaca New York hombre", price: "46",image:"https://falabella.scene7.com/is/image/FalabellaPE/18854117_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"13", name: "Blazer mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882437563_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"13", name: "Blazer mujer", price: "57",image:"https://falabella.scene7.com/is/image/FalabellaPE/882437563_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"14", name: "Polo croix hombre", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18957256_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"14", name: "Polo croix hombre", price: "36",image:"https://falabella.scene7.com/is/image/FalabellaPE/18957256_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"15", name: "Casaca Univerty mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882455753_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"15", name: "Casaca Univerty mujer", price: "46",image:"https://falabella.scene7.com/is/image/FalabellaPE/882455753_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"16", name: "Pantalon drill hombre", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882479688_1?wid=1500&hei=1500&qlt=70"),
+      Building(id:"16", name: "Pantalon drill hombre", price: "36",image:"https://falabella.scene7.com/is/image/FalabellaPE/882479688_1?wid=1500&hei=1500&qlt=70"),
     );
 
     _searchList = _list;
