@@ -6,10 +6,10 @@ import 'package:sesion_09/widgets/index.dart';
 class Building {
   String? id;
   String? name;
-  String ?place;
+  String ?price;
   String ?image;
 
-  Building({this.id, this.name, this.place, this.image});
+  Building({this.id, this.name, this.price, this.image});
 }
 
 class SearchList extends StatefulWidget {
@@ -60,35 +60,57 @@ class _SearchListState extends State<SearchList> {
   void init() {
     _list = [];
     _list.add(
-      Building(id:"1", name: "polo", place: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18855858_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"1", name: "Chompa marino hombre", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882359721_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"1", name: "polo1", place: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18634892_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"2", name: "Joguer plomo hombre", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882475587_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"1", name: "volo2", place: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18986720_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"3", name: "Jean mom mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/19315069_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"1", name: "kolo1", place: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882450723_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"4", name: "Chaleco Yoniste hombre", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/19113853_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"1", name: "colo1", place: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18855858_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"5", name: "Cardigan Basement mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18986720_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"1", name: "polo", place: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18855858_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"6", name: "Polera Gap mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18855858_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"1", name: "polo1", place: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18634892_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"7", name: "Pantalon Mango mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882454805_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"1", name: "volo2", place: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18986720_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"8", name: "Pantalon Mossimo mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882546300_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"1", name: "kolo1", place: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882450723_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"9", name: "Sweater Germanota mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882450723_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
     _list.add(
-      Building(id:"1", name: "colo1", place: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18855858_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+      Building(id:"17", name: "Sweater Volcom hombre", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/19056537_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
     );
+    _list.add(
+      Building(id:"10", name: "Chompa De Yong mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/19176245_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+    );
+    _list.add(
+      Building(id:"11", name: "Chaleco Cardin hombre", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/19254452_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+    );
+    _list.add(
+      Building(id:"12", name: "Casaca New York hombre", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18854117_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+    );
+    _list.add(
+      Building(id:"13", name: "Blazer mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882437563_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+    );
+    _list.add(
+      Building(id:"14", name: "Polo croix hombre", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/18957256_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+    );
+    _list.add(
+      Building(id:"15", name: "Casaca Univerty mujer", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882455753_1?wid=1004&hei=1500&crop=248,0,1004,1500&qlt=70"),
+    );
+    _list.add(
+      Building(id:"16", name: "Pantalon drill hombre", price: "280",image:"https://falabella.scene7.com/is/image/FalabellaPE/882479688_1?wid=1500&hei=1500&qlt=70"),
+    );
+
     _searchList = _list;
     log('$_searchList');
   }
@@ -130,18 +152,20 @@ class _SearchListState extends State<SearchList> {
             },
           ),
         ]),
-        body: GridView.builder(
-            itemCount: _searchList.length,
-            itemBuilder: (context, index) {
-              return Uiitem(_searchList[index]);
-            },
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              mainAxisExtent: 256,
-              childAspectRatio: MediaQuery.of(context).size.width /
-                (MediaQuery.of(context).size.height/1.5),
-            )
-            ));
+        body: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          child: GridView.builder(
+              itemCount: _searchList.length,
+              itemBuilder: (context, index) {
+                return Uiitem(_searchList[index]);
+              },
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                mainAxisExtent: 280,
+                
+              )
+              ),
+        ));
   }
 
   List<Building> _buildList() {
@@ -162,8 +186,7 @@ class _SearchListState extends State<SearchList> {
 
       _searchList = _list
           .where((element) =>
-              element.name!.toLowerCase().contains(_searchText.toLowerCase()) ||
-              element.place!.toLowerCase().contains(_searchText.toLowerCase()))
+              element.name!.toLowerCase().contains(_searchText.toLowerCase()))
           .toList();
       print('${_searchList.length}');
       return _searchList; //_searchList.map((contact) =>  Uiitem(contact)).toList();
@@ -184,7 +207,7 @@ class _SearchListState extends State<SearchList> {
         color: Colors.orange,
       );
       appBarTitle = const Text(
-        "My Properties",
+        "Search...",
         style: TextStyle(color: Colors.white),
       );
       _IsSearching = false;
@@ -200,7 +223,7 @@ class Uiitem extends StatelessWidget {
   Widget build(BuildContext context) {
     return CardSearch(
                   image: building.image!,
-                  price: building.place!,
+                  price: building.price!,
                   title: building.name!
               );
   }
