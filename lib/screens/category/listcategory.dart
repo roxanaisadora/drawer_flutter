@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:sesion_09/widgets/index.dart';
-
+import 'package:quickalert/quickalert.dart';
 class ListCategory extends StatelessWidget {
   final List data;
   final String titleappbar;
@@ -32,7 +32,21 @@ class ListCategory extends StatelessWidget {
               final dato = data[index];
               return CardCategory(
                   image: dato['image'],
-                  price: dato['price']
+                  price: dato['price'],
+                  favorite:(){
+                    QuickAlert.show(
+                      context: context,
+                      type: QuickAlertType.success,
+                      text: 'Se ha agregado a lista de deseo',
+                      );
+                  },
+                  buy:(){
+                      QuickAlert.show(
+                        context: context,
+                        type: QuickAlertType.success,
+                        text: 'Se ha agregado al carrito de compra',
+                        );
+                  }
               );
             }
           ),

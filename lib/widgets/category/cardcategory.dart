@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:transparent_image/transparent_image.dart';
 class CardCategory extends StatelessWidget {
   final String? image;
-   final String? price;
-  const CardCategory({super.key, this.image, this.price});
+  final String? price;
+  final Function? favorite;
+  final Function? buy;
+  const CardCategory({super.key, this.image, this.price, this.favorite, this.buy});
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +53,7 @@ class CardCategory extends StatelessWidget {
                                   ),
                                 ),
                                 InkWell(
-                                    onTap: () {},
+                                    onTap: ()=> favorite!(),
                                     child: const Icon(
                                       Icons.favorite_border_outlined,
                                       color: Color.fromARGB(
@@ -60,7 +62,7 @@ class CardCategory extends StatelessWidget {
                                     ),
                                 
                                 InkWell(
-                                    onTap: () {},
+                                    onTap: ()=> buy!(),
                                     child: const Icon(
                                       Icons.shopping_cart_outlined,
                                       color: Colors.black,

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:sesion_09/pages/slider.dart';
 import 'package:sesion_09/route/route.dart';
 import 'package:sesion_09/screens/index.dart';
-
+import 'package:quickalert/quickalert.dart';
 import 'package:sesion_09/widgets/index.dart';
 import 'package:sesion_09/preferences/preference.dart';
 import 'package:sesion_09/screens/data.dart';
@@ -242,6 +242,7 @@ class Homescreen extends StatelessWidget {
                                 Container(
                                   color: Color.fromARGB(255, 202, 236, 118),
                                   child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                     children: [
                                       Padding(
                                         padding: const EdgeInsets.all(5),
@@ -256,8 +257,11 @@ class Homescreen extends StatelessWidget {
                                       ),
                                       IconButton(
                                           onPressed: () {
-                                            Navigator.pushNamed(context,
-                                                MyRoutes.rFavoritePage);
+                                            QuickAlert.show(
+                                            context: context,
+                                            type: QuickAlertType.success,
+                                            text: 'Se ha agregado a lista de deseo',
+                                            );
                                           },
                                           icon: const Icon(
                                             Icons.favorite_border_outlined,
@@ -265,7 +269,13 @@ class Homescreen extends StatelessWidget {
                                                 255, 235, 27, 31),
                                           )),
                                       InkWell(
-                                          onTap: () {},
+                                          onTap: () {
+                                            QuickAlert.show(
+                                            context: context,
+                                            type: QuickAlertType.success,
+                                            text: 'Se ha agregado al carrito de compra',
+                                            );
+                                          },
                                           child: const Icon(
                                             Icons.shopping_cart_outlined,
                                             color: Colors.black,

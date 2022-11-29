@@ -1,5 +1,5 @@
 import 'dart:developer';
-
+import 'package:quickalert/quickalert.dart';
 import 'package:flutter/material.dart';
 import 'package:sesion_09/widgets/index.dart';
 
@@ -224,7 +224,21 @@ class Uiitem extends StatelessWidget {
     return CardSearch(
                   image: building.image!,
                   price: building.price!,
-                  title: building.name!
+                  title: building.name!,
+                  favorite:(){
+                    QuickAlert.show(
+                      context: context,
+                      type: QuickAlertType.success,
+                      text: 'Se ha agregado a lista de deseo',
+                      );
+                  },
+                  buy:(){
+                      QuickAlert.show(
+                        context: context,
+                        type: QuickAlertType.success,
+                        text: 'Se ha agregado al carrito de compra',
+                        );
+                  }
               );
   }
 }

@@ -4,7 +4,9 @@ class CardSearch extends StatelessWidget {
   final String? image;
   final String? price;
   final String? title;
-  const CardSearch({super.key, this.image, this.price, this.title});
+  final Function? favorite;
+  final Function? buy;
+  const CardSearch({super.key, this.image, this.price, this.title, this.favorite, this.buy});
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +63,7 @@ class CardSearch extends StatelessWidget {
                                   ),
                                 ),
                                 InkWell(
-                                    onTap: () {},
+                                    onTap: ()=> favorite!(),
                                     child: const Icon(
                                       Icons.favorite_border_outlined,
                                       color: Color.fromARGB(
@@ -70,7 +72,7 @@ class CardSearch extends StatelessWidget {
                                     ),
                                 
                                 InkWell(
-                                    onTap: () {},
+                                    onTap: ()=> buy!(),
                                     child: const Icon(
                                       Icons.shopping_cart_outlined,
                                       color: Colors.black,
