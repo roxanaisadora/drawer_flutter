@@ -12,7 +12,7 @@ class NavigationScrean extends StatelessWidget {
       return [
         const Homescreen(),
         const Category(),
-        const Screen4(),
+        const FavouritePage(),
         const MyPerfilScreen(),
       ];
     }
