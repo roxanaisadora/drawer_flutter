@@ -11,7 +11,7 @@ class MyPerfilScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 49, 192, 104),
+        backgroundColor: Color.fromARGB(255, 249, 67, 240),
         title: const Text('Mi Perfil'),
         centerTitle: true,
       ),
@@ -23,7 +23,7 @@ class MyPerfilScreen extends StatelessWidget {
               Container(
                 width: double.infinity,
                  decoration: BoxDecoration(
-                  color:  Color.fromARGB(255, 49, 192, 104),
+                  color:  Color.fromARGB(255, 248, 79, 234),
                     borderRadius: const BorderRadius.only(
                       bottomRight: Radius.circular(17),
                       bottomLeft: Radius.circular(17),
