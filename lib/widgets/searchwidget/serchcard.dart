@@ -33,14 +33,18 @@ class CardSearch extends StatelessWidget {
                           ),
                           Container(
                             width: double.infinity,
-                            height: 20,
+                            height: 50,
                             color:Color.fromARGB(255, 234, 183, 227),
-                            child: Text(title!, textAlign: TextAlign.center,style: TextStyle(fontSize: 16),),
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 5),
+                              child: Text(title!, textAlign: TextAlign.center,style: TextStyle(fontSize: 16),),
+                            ),
                           ),
                           Container(
                             color: const Color.fromARGB(255, 244, 100, 148),
                             height: 30,
                             child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.all(5),
@@ -56,13 +60,15 @@ class CardSearch extends StatelessWidget {
                                                 FontWeight.bold)),
                                   ),
                                 ),
-                                IconButton(
-                                    onPressed: () {},
-                                    icon: const Icon(
+                                InkWell(
+                                    onTap: () {},
+                                    child: const Icon(
                                       Icons.favorite_border_outlined,
                                       color: Color.fromARGB(
                                           255, 235, 27, 31),
-                                    )),
+                                    )
+                                    ),
+                                
                                 InkWell(
                                     onTap: () {},
                                     child: const Icon(

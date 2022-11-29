@@ -34,6 +34,7 @@ class CardCategory extends StatelessWidget {
                             color: const Color.fromARGB(255, 244, 100, 148),
                             height: 30,
                             child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.all(5),
@@ -49,13 +50,15 @@ class CardCategory extends StatelessWidget {
                                                 FontWeight.bold)),
                                   ),
                                 ),
-                                IconButton(
-                                    onPressed: () {},
-                                    icon: const Icon(
+                                InkWell(
+                                    onTap: () {},
+                                    child: const Icon(
                                       Icons.favorite_border_outlined,
                                       color: Color.fromARGB(
                                           255, 235, 27, 31),
-                                    )),
+                                    )
+                                    ),
+                                
                                 InkWell(
                                     onTap: () {},
                                     child: const Icon(
